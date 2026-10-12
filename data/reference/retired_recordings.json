@@ -1,0 +1,16 @@
+[
+  {
+    "file": "seattle-san-francisco.json",
+    "sha256": "d3aea75a89d216556eb371674a8998043deb9ce2d6fdf36a68c6493b16c1819f",
+    "start": [
+      -122.351538,
+      47.619335
+    ],
+    "finish": [
+      -123.032229,
+      37.727239
+    ],
+    "reason": "Retired from active routing: offshore Census endpoint snapped 29,953 m onto Point Reyes Lighthouse Road. Preserved byte-for-byte as historical evidence, not a valid San Francisco road result.",
+    "replacement": "seattle-san-francisco-reviewed-endpoint.json"
+  }
+]

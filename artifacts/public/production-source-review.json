@@ -1,0 +1,82 @@
+{
+  "scope": "Independent public Git clone and new Python environment; Linux GitHub CI and local browser/DB checks, not public hosting",
+  "published_repository": "https://github.com/ShyanCS/FuelRouteIQ",
+  "validated_ci_commit": "12d948933d78ebf0c02a7b0880a1408e382b5ee3",
+  "ci_run": "https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38231909027",
+  "ci_conclusion": "success",
+  "ci_tests": {
+    "passed": 302,
+    "skipped": 2,
+    "duration_seconds": 32.44,
+    "skip_reasons": [
+      "private assessment CSV absent",
+      "genuine ORS key absent"
+    ]
+  },
+  "ci_postman": {
+    "requests": 11,
+    "assertions": 74,
+    "failures": 0,
+    "scope": "actual loopback HTTP on Ubuntu runner, not hosted HTTPS",
+    "average_response_ms": 163
+  },
+  "fresh_clone": {
+    "lockfile_install": "passed",
+    "migrations": "passed",
+    "cache_table": "passed",
+    "public_seed": "passed",
+    "places": 32071,
+    "reviewed_sites": 31,
+    "five_pair_modes_statuses": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      422,
+      422
+    ],
+    "private_file_present": false
+  },
+  "unseen_inputs": [
+    {
+      "start": "Austin, TX",
+      "finish": "Austin, TX",
+      "status": 200,
+      "description": "legitimate zero-distance same endpoint; not a road journey"
+    },
+    {
+      "start": "Austin, TX",
+      "finish": "Houston, TX",
+      "status": 422,
+      "error": "RECORDED_ROUTE_UNAVAILABLE"
+    }
+  ],
+  "browser": {
+    "scope": "localhost fresh public clone, not public HTTPS",
+    "long_cost_json_and_ui": "138.44",
+    "real_recorded_road_points": 9539,
+    "stop_objects_and_numbered_pins": 2,
+    "timeline_paired_x_positions": "passed",
+    "short_cash": "0.00",
+    "short_consumed_display_gallons": 9.5,
+    "estimated_warning": "passed",
+    "error_clears_cost_and_timeline": "passed",
+    "desktop_viewport_width": 1280,
+    "mobile_client_width": 375,
+    "mobile_document_width": 375,
+    "mobile_map_width": 325.6
+  },
+  "dependency_audit": {
+    "pinned_packages": 36,
+    "vulnerabilities": 0,
+    "skipped": 0
+  },
+  "public_host_status": "blocked on required Render workspace confirmation",
+  "authenticated_ors_status": "blocked on genuine credential",
+  "loom_status": "script/shot list prepared; no recording/link",
+  "later_endpoint_correction": "New Seattle recording/endpoint trust fix is validated separately in subsequent full tests/CI; historical Seattle geometry is retired."
+}

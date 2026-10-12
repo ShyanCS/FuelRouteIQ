@@ -1,5 +1,7 @@
 # Data sources and redistribution boundaries
 
+Endpoint correction: the San Francisco populated-place reference is from [GeoNames record 5391959](https://www.geonames.org/5391959/san-francisco.html), WGS84 37.77493, -122.41942, under [CC BY 4.0](https://www.geonames.org/about.html). Attribution: GeoNames / Unxos GmbH. A single factual coordinate record and its source/review note are bundled in `endpoint_overrides.json`. It replaces the offshore Census point only for endpoint routing/locality validation; Census station approximations remain unchanged. It is still an approximate city location, never a surveyed address or pump. No station or fuel price was added by this correction.
+
 | Asset | Origin | Review package treatment |
 |---|---|---|
 | Full assessment CSV and original 12-row excerpt | Supplied private assessment material; sharing rights unspecified | Excluded from Git and `REVIEW_PACKAGE.zip`. Preserved locally. Import the evaluator's supplied file for assessment-price results. |

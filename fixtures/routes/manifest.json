@@ -53,10 +53,10 @@
       47.619335
     ],
     "finish": [
-      -123.032229,
-      37.727239
+      -122.41942,
+      37.77493
     ],
-    "file": "seattle-san-francisco.json",
-    "sha256": "d3aea75a89d216556eb371674a8998043deb9ce2d6fdf36a68c6493b16c1819f"
+    "file": "seattle-san-francisco-reviewed-endpoint.json",
+    "sha256": "354f258bef316537bdfe364075b2bd214e47eb0b292ad1c8d2422bc1c49d97cc"
   }
 ]

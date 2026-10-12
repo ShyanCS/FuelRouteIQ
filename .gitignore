@@ -42,3 +42,4 @@ artifacts/public/*
 !artifacts/public/final-tests.txt
 !artifacts/public/final-coverage.json
 !artifacts/public/production-demo.png
+!artifacts/public/final-review-local.png

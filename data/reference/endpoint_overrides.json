@@ -1,0 +1,13 @@
+[
+  {
+    "census_geoid": "0667000",
+    "city": "San Francisco",
+    "state": "CA",
+    "coordinates": [-122.41942, 37.77493],
+    "source": "https://www.geonames.org/5391959/san-francisco.html",
+    "source_id": "5391959",
+    "license": "GeoNames CC BY 4.0; https://www.geonames.org/about.html",
+    "reviewed_at": "2026-10-12T09:58:11Z",
+    "reason": "Census's offshore representative point snapped roughly 30 km away onto Point Reyes Lighthouse Road in the previous recording. Use the published populated-place reference for endpoint routing only. This is an approximate city point, not a precise address or station."
+  }
+]

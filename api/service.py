@@ -13,6 +13,7 @@ from optimizer.engine import optimize
 from optimizer.schemas import Candidate, FuelGap, Vehicle
 from routing.cache import cache_key, increment_metric, request_lock
 from routing.geocoding import resolve_location
+from routing.geometry import validate_endpoint_snaps
 from routing.provider import METERS_PER_MILE, get_provider, validate_route
 from stations.importer import active_dataset, coverage
 from stations.locate import project_stations
@@ -244,7 +245,7 @@ def run_planning(data, counts, metadata):
         {"projection_duration_ms": 0, "optimizer_duration_ms": 0, "baseline_duration_ms": 0}
     )
     key = cache_key(
-        "route-v2",
+        "route-v3",
         {
             "start": start["coordinates"],
             "finish": finish["coordinates"],
@@ -273,6 +274,7 @@ def run_planning(data, counts, metadata):
             else:
                 route = provider.directions(start["coordinates"], finish["coordinates"], counts)
             route = validate_route(route)
+            route = validate_endpoint_snaps(route, start["coordinates"], finish["coordinates"])
             cache.set(key, route, settings.ROUTE_CACHE_TTL_SECONDS)
     metadata["routing_duration_ms"] = round((time.perf_counter() - t) * 1000, 3)
     dataset = active_dataset()

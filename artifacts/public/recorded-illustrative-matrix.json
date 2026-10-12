@@ -85,10 +85,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 3
         },
-        "endpoint_resolution_duration_ms": 3.782,
-        "projection_duration_ms": 110.731,
-        "optimizer_duration_ms": 0.072,
-        "baseline_duration_ms": 0.087,
+        "endpoint_resolution_duration_ms": 2.191,
+        "projection_duration_ms": 111.78,
+        "optimizer_duration_ms": 0.071,
+        "baseline_duration_ms": 0.089,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -98,6 +98,7 @@
             "label": "Chicago city, IL",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -109,23 +110,24 @@
             "label": "Dallas city, TX",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": false,
-        "routing_duration_ms": 54.286,
+        "routing_duration_ms": 54.957,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 1,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 210.648
+        "request_duration_ms": 202.147
       },
       "error": null,
       "coverage_gap": null,
-      "wall_duration_ms": 889.4247999996878,
+      "wall_duration_ms": 209.62500001769513,
       "required_complete_route_fuel_gallons": 96.14738676131392,
       "candidate_location_quality": {
         "verified_station": 6
@@ -181,9 +183,9 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 3
         },
-        "endpoint_resolution_duration_ms": 1.37,
-        "projection_duration_ms": 83.396,
-        "optimizer_duration_ms": 0.057,
+        "endpoint_resolution_duration_ms": 2.093,
+        "projection_duration_ms": 78.294,
+        "optimizer_duration_ms": 0.056,
         "baseline_duration_ms": 0.086,
         "endpoints": {
           "start": {
@@ -194,6 +196,7 @@
             "label": "Chicago city, IL",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -205,23 +208,24 @@
             "label": "Dallas city, TX",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 20.734,
+        "routing_duration_ms": 18.518,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 141.426
+        "request_duration_ms": 131.0
       },
       "error": null,
       "coverage_gap": null,
-      "wall_duration_ms": 149.07149999635294,
+      "wall_duration_ms": 138.4424999996554,
       "required_complete_route_fuel_gallons": 96.14738676131392,
       "candidate_location_quality": {
         "verified_station": 6
@@ -273,10 +277,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 1.333,
-        "projection_duration_ms": 20.714,
+        "endpoint_resolution_duration_ms": 2.105,
+        "projection_duration_ms": 21.2,
         "optimizer_duration_ms": 0.017,
-        "baseline_duration_ms": 0.014,
+        "baseline_duration_ms": 0.015,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -286,6 +290,7 @@
             "label": "Chicago city, IL",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -297,23 +302,24 @@
             "label": "Milwaukee city, WI",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": false,
-        "routing_duration_ms": 22.23,
+        "routing_duration_ms": 23.163,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 1,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 58.946
+        "request_duration_ms": 62.652
       },
       "error": null,
       "coverage_gap": null,
-      "wall_duration_ms": 61.06760000693612,
+      "wall_duration_ms": 64.77799999993294,
       "required_complete_route_fuel_gallons": 9.502642070309394,
       "candidate_location_quality": {}
     },
@@ -363,9 +369,9 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 1.263,
-        "projection_duration_ms": 27.648,
-        "optimizer_duration_ms": 0.015,
+        "endpoint_resolution_duration_ms": 2.268,
+        "projection_duration_ms": 40.514,
+        "optimizer_duration_ms": 0.016,
         "baseline_duration_ms": 0.015,
         "endpoints": {
           "start": {
@@ -376,6 +382,7 @@
             "label": "Chicago city, IL",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -387,23 +394,24 @@
             "label": "Milwaukee city, WI",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 9.952,
+        "routing_duration_ms": 11.578,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 53.8
+        "request_duration_ms": 69.482
       },
       "error": null,
       "coverage_gap": null,
-      "wall_duration_ms": 55.79619997297414,
+      "wall_duration_ms": 71.50990000809543,
       "required_complete_route_fuel_gallons": 9.502642070309394,
       "candidate_location_quality": {}
     },
@@ -457,10 +465,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 1.373,
-        "projection_duration_ms": 146.166,
-        "optimizer_duration_ms": 0.076,
-        "baseline_duration_ms": 0.076,
+        "endpoint_resolution_duration_ms": 2.029,
+        "projection_duration_ms": 120.684,
+        "optimizer_duration_ms": 0.074,
+        "baseline_duration_ms": 0.078,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -470,6 +478,7 @@
             "label": "New York city, NY",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -481,23 +490,24 @@
             "label": "Miami city, FL",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": false,
-        "routing_duration_ms": 56.038,
+        "routing_duration_ms": 53.793,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 1,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 248.886
+        "request_duration_ms": 222.666
       },
       "error": null,
       "coverage_gap": null,
-      "wall_duration_ms": 260.4313000047114,
+      "wall_duration_ms": 234.8325000202749,
       "required_complete_route_fuel_gallons": 128.00533633579894,
       "candidate_location_quality": {
         "verified_station": 11
@@ -553,10 +563,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 1.413,
-        "projection_duration_ms": 123.378,
+        "endpoint_resolution_duration_ms": 2.063,
+        "projection_duration_ms": 123.773,
         "optimizer_duration_ms": 0.075,
-        "baseline_duration_ms": 0.077,
+        "baseline_duration_ms": 0.076,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -566,6 +576,7 @@
             "label": "New York city, NY",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -577,23 +588,24 @@
             "label": "Miami city, FL",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 13.222,
+        "routing_duration_ms": 13.562,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 183.731
+        "request_duration_ms": 185.015
       },
       "error": null,
       "coverage_gap": null,
-      "wall_duration_ms": 195.51209997734986,
+      "wall_duration_ms": 196.76730001810938,
       "required_complete_route_fuel_gallons": 128.00533633579894,
       "candidate_location_quality": {
         "verified_station": 11
@@ -649,10 +661,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 1.412,
-        "projection_duration_ms": 101.729,
-        "optimizer_duration_ms": 0.064,
-        "baseline_duration_ms": 0.071,
+        "endpoint_resolution_duration_ms": 2.034,
+        "projection_duration_ms": 100.932,
+        "optimizer_duration_ms": 0.066,
+        "baseline_duration_ms": 0.07,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -662,6 +674,7 @@
             "label": "Los Angeles city, CA",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -673,23 +686,24 @@
             "label": "Denver city, CO",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": false,
-        "routing_duration_ms": 46.882,
+        "routing_duration_ms": 47.684,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 1,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 190.042
+        "request_duration_ms": 214.838
       },
       "error": null,
       "coverage_gap": null,
-      "wall_duration_ms": 199.88329999614507,
+      "wall_duration_ms": 225.55619999184273,
       "required_complete_route_fuel_gallons": 103.68331444364908,
       "candidate_location_quality": {
         "verified_station": 8
@@ -745,10 +759,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 1.341,
-        "projection_duration_ms": 102.161,
-        "optimizer_duration_ms": 0.065,
-        "baseline_duration_ms": 0.077,
+        "endpoint_resolution_duration_ms": 2.049,
+        "projection_duration_ms": 104.744,
+        "optimizer_duration_ms": 0.062,
+        "baseline_duration_ms": 0.071,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -758,6 +772,7 @@
             "label": "Los Angeles city, CA",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -769,23 +784,24 @@
             "label": "Denver city, CO",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 12.438,
+        "routing_duration_ms": 13.994,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 177.674
+        "request_duration_ms": 183.09
       },
       "error": null,
       "coverage_gap": null,
-      "wall_duration_ms": 187.544499989599,
+      "wall_duration_ms": 220.5610999953933,
       "required_complete_route_fuel_gallons": 103.68331444364908,
       "candidate_location_quality": {
         "verified_station": 8
@@ -798,17 +814,17 @@
       "http_status": 422,
       "real_road_geometry_obtained": true,
       "geometry_evidence": "recorded_OSRM",
-      "distance_miles": 835.4140569076593,
-      "geometry_coordinate_count": 14074,
+      "distance_miles": 808.9015151515151,
+      "geometry_coordinate_count": 12369,
       "feasible_plan": false,
       "fuel_stop_count": null,
       "fuel_summary": null,
       "location_quality": [],
       "candidate_count": 3,
       "meta": {
-        "endpoint_resolution_duration_ms": 1.509,
-        "projection_duration_ms": 444.947,
-        "optimizer_duration_ms": 0.246,
+        "endpoint_resolution_duration_ms": 9.038,
+        "projection_duration_ms": 635.208,
+        "optimizer_duration_ms": 0.262,
         "baseline_duration_ms": 0,
         "endpoints": {
           "start": {
@@ -819,23 +835,25 @@
             "label": "Seattle city, WA",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
           "finish": {
             "coordinates": [
-              -123.032229,
-              37.727239
+              -122.41942,
+              37.77493
             ],
             "label": "San Francisco city, CA",
             "precision": "approximate_city",
-            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "source": "https://www.geonames.org/5391959/san-francisco.html",
+            "representative_point_note": "Census's offshore representative point snapped roughly 30 km away onto Point Reyes Lighthouse Road in the previous recording. Use the published populated-place reference for endpoint routing only. This is an approximate city point, not a precise address or station.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": false,
-        "routing_duration_ms": 49.349,
+        "routing_duration_ms": 164.721,
         "optimization_cache_hit": false,
         "projection_diagnostics": {
           "ambiguous_projection_rejections": 0,
@@ -846,15 +864,15 @@
         "recorded_route_reads": 1,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 511.034
+        "request_duration_ms": 860.074
       },
       "error": {
         "code": "UNREACHABLE_FUEL_GAP",
         "message": "Insufficient eligible fueling coverage for this route and initial fuel; this is not proof that real stations do not exist."
       },
       "coverage_gap": {
-        "from_mile": 212.21555224835157,
-        "to_mile": 835.4140569076593,
+        "from_mile": 212.21574492710894,
+        "to_mile": 808.9015151515151,
         "available_range_miles": 500.0,
         "location_mode": "strict",
         "location_coverage": {
@@ -868,8 +886,8 @@
         },
         "plan_available": false
       },
-      "wall_duration_ms": 562.9741000011563,
-      "required_complete_route_fuel_gallons": 83.54140569076593,
+      "wall_duration_ms": 905.7759999996051,
+      "required_complete_route_fuel_gallons": 80.89015151515152,
       "candidate_location_quality": {
         "verified_station": 3
       }
@@ -881,17 +899,17 @@
       "http_status": 422,
       "real_road_geometry_obtained": true,
       "geometry_evidence": "recorded_OSRM",
-      "distance_miles": 835.4140569076593,
-      "geometry_coordinate_count": 14074,
+      "distance_miles": 808.9015151515151,
+      "geometry_coordinate_count": 12369,
       "feasible_plan": false,
       "fuel_stop_count": null,
       "fuel_summary": null,
       "location_quality": [],
       "candidate_count": 3,
       "meta": {
-        "endpoint_resolution_duration_ms": 5.475,
-        "projection_duration_ms": 727.801,
-        "optimizer_duration_ms": 0.244,
+        "endpoint_resolution_duration_ms": 8.018,
+        "projection_duration_ms": 655.648,
+        "optimizer_duration_ms": 0.228,
         "baseline_duration_ms": 0,
         "endpoints": {
           "start": {
@@ -902,23 +920,25 @@
             "label": "Seattle city, WA",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
           "finish": {
             "coordinates": [
-              -123.032229,
-              37.727239
+              -122.41942,
+              37.77493
             ],
             "label": "San Francisco city, CA",
             "precision": "approximate_city",
-            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "source": "https://www.geonames.org/5391959/san-francisco.html",
+            "representative_point_note": "Census's offshore representative point snapped roughly 30 km away onto Point Reyes Lighthouse Road in the previous recording. Use the published populated-place reference for endpoint routing only. This is an approximate city point, not a precise address or station.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 42.679,
+        "routing_duration_ms": 43.986,
         "optimization_cache_hit": false,
         "projection_diagnostics": {
           "ambiguous_projection_rejections": 0,
@@ -929,15 +949,15 @@
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 828.539
+        "request_duration_ms": 757.757
       },
       "error": {
         "code": "UNREACHABLE_FUEL_GAP",
         "message": "Insufficient eligible fueling coverage for this route and initial fuel; this is not proof that real stations do not exist."
       },
       "coverage_gap": {
-        "from_mile": 212.21555224835157,
-        "to_mile": 835.4140569076593,
+        "from_mile": 212.21574492710894,
+        "to_mile": 808.9015151515151,
         "available_range_miles": 500.0,
         "location_mode": "estimated",
         "location_coverage": {
@@ -951,8 +971,8 @@
         },
         "plan_available": false
       },
-      "wall_duration_ms": 875.3871000080835,
-      "required_complete_route_fuel_gallons": 83.54140569076593,
+      "wall_duration_ms": 795.8719000162091,
+      "required_complete_route_fuel_gallons": 80.89015151515152,
       "candidate_location_quality": {
         "verified_station": 3
       }
@@ -978,7 +998,7 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 3
         },
-        "endpoint_resolution_duration_ms": 8.761,
+        "endpoint_resolution_duration_ms": 7.228,
         "projection_duration_ms": 0,
         "optimizer_duration_ms": 0,
         "baseline_duration_ms": 0,
@@ -991,6 +1011,7 @@
             "label": "Chicago city, IL",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -1002,19 +1023,20 @@
             "label": "Dallas city, TX",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 41.041,
+        "routing_duration_ms": 36.701,
         "optimization_cache_hit": true,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 138.707
+        "request_duration_ms": 141.141
       },
       "error_code": null
     },
@@ -1039,10 +1061,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 3
         },
-        "endpoint_resolution_duration_ms": 5.864,
-        "projection_duration_ms": 525.407,
-        "optimizer_duration_ms": 0.237,
-        "baseline_duration_ms": 0.26,
+        "endpoint_resolution_duration_ms": 7.991,
+        "projection_duration_ms": 510.062,
+        "optimizer_duration_ms": 0.203,
+        "baseline_duration_ms": 0.455,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -1052,6 +1074,7 @@
             "label": "Chicago city, IL",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -1063,19 +1086,20 @@
             "label": "Dallas city, TX",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 35.25,
+        "routing_duration_ms": 38.833,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 701.492
+        "request_duration_ms": 677.11
       },
       "error_code": null
     },
@@ -1100,7 +1124,7 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 3
         },
-        "endpoint_resolution_duration_ms": 5.926,
+        "endpoint_resolution_duration_ms": 8.513,
         "projection_duration_ms": 0,
         "optimizer_duration_ms": 0,
         "baseline_duration_ms": 0,
@@ -1113,6 +1137,7 @@
             "label": "Chicago city, IL",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           },
@@ -1124,25 +1149,26 @@
             "label": "Dallas city, TX",
             "precision": "approximate_city",
             "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
             "cache_hit": false,
             "local_index": true
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 40.926,
+        "routing_duration_ms": 37.012,
         "optimization_cache_hit": true,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 143.958
+        "request_duration_ms": 267.008
       },
       "error_code": null
     }
   ],
   "warm_samples": 20,
-  "warm_median_wall_ms": 178.449550003279,
-  "warm_min_wall_ms": 162.99219999928027,
-  "warm_max_wall_ms": 331.51160000124946
+  "warm_median_wall_ms": 174.7431499970844,
+  "warm_min_wall_ms": 163.07370000868104,
+  "warm_max_wall_ms": 310.01490002381615
 }

@@ -85,6 +85,9 @@ ARTIFACTS = {
     "artifacts/public/production-postman-summary.json",
     "artifacts/public/production-browser.json",
     "artifacts/public/production-demo.png",
+    "artifacts/public/production-dependency-audit.json",
+    "artifacts/public/final-review-local.png",
+    "artifacts/public/production-source-review.json",
 }
 
 

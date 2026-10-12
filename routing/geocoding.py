@@ -1,3 +1,4 @@
+import json
 import math
 import re
 
@@ -10,6 +11,25 @@ from routing.cache import cache_key, request_lock
 from routing.provider import request_json
 from stations.models import City
 from stations.normalization import CANADIAN_STATES, STATE_NAMES, US_STATES, city_key, clean
+
+
+def city_reference(city):
+    """Endpoint-only reviewed corrections; never change station approximations."""
+    entries = json.loads(
+        (settings.BASE_DIR / "data/reference/endpoint_overrides.json").read_text(encoding="utf-8")
+    )
+    for entry in entries:
+        if (
+            city.geoid == entry["census_geoid"]
+            and city.key == city_key(entry["city"])
+            and city.state == entry["state"]
+        ):
+            return entry["coordinates"], entry["source"], entry["reason"]
+    return (
+        [city.longitude, city.latitude],
+        city.source,
+        "Census representative city point; not an exact departure or arrival address.",
+    )
 
 
 def resolve_location(value, counts):
@@ -40,11 +60,13 @@ def resolve_location(value, counts):
             )
         if matches:
             c = matches[0]
+            coordinates, source, note = city_reference(c)
             return {
-                "coordinates": [c.longitude, c.latitude],
+                "coordinates": coordinates,
                 "label": f"{c.name}, {state}",
                 "precision": "approximate_city",
-                "source": c.source,
+                "source": source,
+                "representative_point_note": note,
                 "cache_hit": False,
                 "local_index": True,
             }
@@ -68,7 +90,7 @@ def resolve_location(value, counts):
         {
             "query": normalized.casefold(),
             "provider_url": settings.ORS_GEOCODING_BASE_URL,
-            "locality": [cities[0].geoid, cities[0].longitude, cities[0].latitude],
+            "locality": [cities[0].geoid, *city_reference(cities[0])[0]],
         },
     )
     with request_lock(key):
@@ -121,13 +143,13 @@ def resolve_location(value, counts):
                     422,
                 )
             coords = features[0]["geometry"]["coordinates"][:2]
-            c = cities[0]
+            locality = city_reference(cities[0])[0]
             if (
                 len(coords) != 2
                 or not all(math.isfinite(float(v)) for v in coords)
                 or not -180 <= coords[0] <= 180
                 or not -90 <= coords[1] <= 90
-                or Geod(ellps="WGS84").inv(c.longitude, c.latitude, *coords)[2] > 50_000
+                or Geod(ellps="WGS84").inv(*locality, *coords)[2] > 50_000
             ):
                 raise PlanningError(
                     "UNCERTAIN_ADDRESS",

@@ -14,8 +14,9 @@ import httpx
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "fuelroute.settings")
 django.setup()
-from stations.models import City  # noqa: E402
-from stations.normalization import city_key  # noqa: E402
+from routing.geocoding import resolve_location  # noqa: E402
+from routing.geometry import validate_endpoint_snaps  # noqa: E402
+from routing.provider import CallCounts  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -35,10 +36,8 @@ def main():
         ("Seattle", "WA", "San Francisco", "CA"),
     ]
     for origin, origin_state, city, state in pairs:
-        start_city = City.objects.get(key=city_key(origin), state=origin_state)
-        start = [start_city.longitude, start_city.latitude]
-        c = City.objects.get(key=city_key(city), state=state)
-        finish = [c.longitude, c.latitude]
+        start = resolve_location(f"{origin}, {origin_state}", CallCounts())["coordinates"]
+        finish = resolve_location(f"{city}, {state}", CallCounts())["coordinates"]
         if any(e["start"] == start and e["finish"] == finish for e in manifest):
             print("Preserved", origin, city)
             continue
@@ -64,6 +63,16 @@ def main():
             "snapped_waypoints": raw["waypoints"],
         }
         filename = f"{origin.lower().replace(' ', '-')}-{city.lower().replace(' ', '-')}.json"
+        if (folder / filename).exists():
+            filename = filename.replace(".json", "-reviewed-endpoint.json")
+            # Retain the old file as historical evidence; use corrected endpoints in the active manifest.
+            manifest = [
+                e
+                for e in manifest
+                if e["file"]
+                != f"{origin.lower().replace(' ', '-')}-{city.lower().replace(' ', '-')}.json"
+            ]
+        validate_endpoint_snaps(route, start, finish)
         (folder / filename).write_text(
             json.dumps(route, separators=(",", ":")) + "\n", encoding="utf-8"
         )

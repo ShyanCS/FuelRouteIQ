@@ -1,4 +1,5 @@
 * text=auto eol=lf
+*.md whitespace=-blank-at-eol
 # Preserve exact checksummed input/recording bytes across Windows/Linux clones.
 data/reference/census_places.txt -text -diff whitespace=cr-at-eol,-blank-at-eol
 fixtures/** -text whitespace=cr-at-eol
