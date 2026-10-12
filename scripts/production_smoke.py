@@ -13,6 +13,7 @@ load_dotenv(ROOT / ".env.production", override=True)
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "fuelroute.settings")
 django.setup()
 
+from django.conf import settings  # noqa: E402
 from django.core.cache import cache  # noqa: E402
 from rest_framework.test import APIClient  # noqa: E402
 
@@ -20,6 +21,14 @@ from stations.importer import active_dataset  # noqa: E402
 
 
 def main():
+    if (
+        settings.DEBUG
+        or settings.DATABASES["default"]["ENGINE"] != "django.db.backends.postgresql"
+        or settings.ROUTING_PROVIDER != "recorded"
+    ):
+        raise SystemExit(
+            "This local-only smoke check requires configured production PostgreSQL settings and explicit recorded mode; refusing to mislabel SQLite or consume live routing quota."
+        )
     cache.clear()
     client = APIClient()
     rows = []
@@ -75,7 +84,7 @@ def main():
     assert all(rows[i]["meta"]["route_cache_hit"] for i in (1, 2, 3))
     dataset = active_dataset()
     report = {
-        "scope": "Local Django APIClient over actual remote Neon PostgreSQL, production HTTPS settings; NOT a public hosted HTTP test",
+        "scope": "Local Django APIClient over the configured durable PostgreSQL database, production HTTPS settings; NOT a public hosted HTTP test",
         "dataset_revision": str(dataset.revision),
         "price_basis": dataset.price_basis,
         "rows": rows,
