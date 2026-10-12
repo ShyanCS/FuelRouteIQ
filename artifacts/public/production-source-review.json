@@ -78,5 +78,28 @@
   "public_host_status": "blocked on required Render workspace confirmation",
   "authenticated_ors_status": "blocked on genuine credential",
   "loom_status": "script/shot list prepared; no recording/link",
-  "later_endpoint_correction": "New Seattle recording/endpoint trust fix is validated separately in subsequent full tests/CI; historical Seattle geometry is retired."
+  "later_endpoint_correction": "New Seattle recording/endpoint trust fix is validated separately in subsequent full tests/CI; historical Seattle geometry is retired.",
+  "final_endpoint_ci": {
+    "commit": "e7905f473fe6011f11e9b14cb8b0132e18cd7eb4",
+    "run": "https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38234341812",
+    "conclusion": "success",
+    "tests_passed": 305,
+    "tests_skipped": 2,
+    "tests_seconds": 27.46,
+    "newman_assertions": 74,
+    "newman_failures": 0,
+    "newman_http_requests": 11,
+    "scope": "Ubuntu runner loopback HTTP, not public HTTPS"
+  },
+  "fresh_clone_endpoint_correction": {
+    "commit": "e7905f473fe6011f11e9b14cb8b0132e18cd7eb4",
+    "status": 422,
+    "error": "UNREACHABLE_FUEL_GAP",
+    "miles": 808.9015151515151,
+    "snap_meters": [
+      59.768579161147294,
+      2.5016779944763945
+    ],
+    "end_reference_source": "https://www.geonames.org/5391959/san-francisco.html"
+  }
 }

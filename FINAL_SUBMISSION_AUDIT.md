@@ -26,7 +26,7 @@
 
 1. Genuine HeiGIT key via local .env or hosting secret: authenticated short/long directions/Pelias, cache repeat and live corridor eligibility comparison.
 2. Confirm the connected Render workspace so the authorized free web service can be created; verify actual HTTPS homepage/assets/health/API, Newman, desktop/mobile browser and restart persistence.
-3. Final endpoint correction must pass its post-publication CI; original publication/CI are already verified.
+3. Publication and final endpoint CI are PASS; no remaining code/CI blocker is known.
 4. Record and inspect the <=5-minute Loom, add its real share URL, then the user submits to the employer.
 
 Nationwide strict coverage is PARTIAL (31 reviewed sites). Full assessment estimated mode has 5,983 city points and 612 unresolved sites, with conditional proximity/savings; the public fixture has only 31 reviewed sites. Seattle–San Francisco fails priced coverage honestly. No station/price/route is invented to guarantee success.
@@ -48,3 +48,5 @@ The dependency advisory scan checked all **36 pinned packages, no skips, no know
 Actual local APIClient over the remote PostgreSQL database passed nine cases and route reuse. First response **13,199.616 ms**, repeat **8,394.158 ms**; these include cross-region database round trips from the local machine and are not a hosted latency claim. Pure algorithm/network phase fields are separately recorded. The hosted app/database are intended for nearby regions, but no unmeasured improvement is claimed. Repeated real database seed retained revision `e38195aa-0f88-439f-ae25-9e602ed0991c` and all 31 reviewed sites. Artifacts: `artifacts/public/production-checks.json`, `production-source-review.json` and `production-dependency-audit.json`.
 
 Final endpoint-corrected local suite: **306 passed, 1 skipped in 228.23 s**, **95.30%** backend statement coverage (913/958). The sole local skip requires a genuine ORS key. No mock or recording is claimed as successful authenticated ORS. Full evidence is in `artifacts/public/final-tests.txt` and `final-coverage.json`.
+
+Final endpoint-corrected publication/CI is verified on code commit **e7905f473fe6011f11e9b14cb8b0132e18cd7eb4**. [Successful Ubuntu run](https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38234341812): **305 passed, 2 explicit skips in 27.46 s**, plus **74/74 Newman assertions across 11 real loopback HTTP requests**, production static/security/migration, dependency, lint/format and type checks. Skips: private assessment CSV and genuine ORS key. The independent public clone fast-forwarded to that commit and confirmed the corrected Seattle road/provenance/snap distances and honest 422 coverage gap. Later documentation-only commits preserve this code evidence. Public HTTPS, hosted Postman/browser/restart tests and successful authenticated ORS remain UNVERIFIED; Loom is unrecorded.
