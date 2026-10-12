@@ -94,3 +94,22 @@ def test_production_requires_secret_and_durable_database():
     env["DJANGO_SECRET_KEY"] = "test-only-long-secret-" * 4
     missing_db = subprocess.run(cmd, cwd=settings.BASE_DIR, env=env, capture_output=True, text=True)
     assert missing_db.returncode != 0 and "durable PostgreSQL" in missing_db.stderr
+
+
+def test_plain_postgres_url_gets_options_and_production_ssl():
+    env = {
+        **os.environ,
+        "DJANGO_DEBUG": "false",
+        "DJANGO_SECRET_KEY": "test-only-long-secret-" * 4,
+        "DATABASE_URL": "postgresql://test:test@localhost/test",
+    }
+    cmd = [
+        sys.executable,
+        "-c",
+        "import fuelroute.settings as s; assert s.DATABASES['default']['OPTIONS']['connect_timeout']==10; assert s.DATABASES['default']['OPTIONS']['sslmode']=='require'",
+    ]
+    result = subprocess.run(cmd, cwd=settings.BASE_DIR, env=env, capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
+    env["DATABASE_URL"] += "?sslmode=disable"
+    rejected = subprocess.run(cmd, cwd=settings.BASE_DIR, env=env, capture_output=True, text=True)
+    assert rejected.returncode != 0 and "requires SSL" in rejected.stderr

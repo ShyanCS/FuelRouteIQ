@@ -61,7 +61,12 @@ if os.getenv("DATABASE_URL"):
             "DATABASE_URL must be PostgreSQL; use DATABASE_PATH for local SQLite"
         )
     DATABASES["default"]["DISABLE_SERVER_SIDE_CURSORS"] = True
-    DATABASES["default"]["OPTIONS"].update({"connect_timeout": 10})
+    db_options = DATABASES["default"].setdefault("OPTIONS", {})
+    db_options["connect_timeout"] = 10
+    if not DEBUG:
+        db_options.setdefault("sslmode", "require")
+        if db_options["sslmode"] not in {"require", "verify-ca", "verify-full"}:
+            raise ImproperlyConfigured("Production PostgreSQL requires SSL")
 if not DEBUG and not os.getenv("DATABASE_URL"):
     raise ImproperlyConfigured("Production requires a durable PostgreSQL DATABASE_URL")
 # Shared persistent cache for the local multi-threaded demo; createcachetable installs it.

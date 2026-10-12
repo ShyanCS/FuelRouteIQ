@@ -25,6 +25,8 @@ review-unpacked/
 .venv-review/
 REVIEW_PACKAGE.zip
 FINAL_REVIEW_PACKAGE.zip
+submission-clone/
+.venv-submission/
 .neon
 artifacts/*
 !artifacts/public/
