@@ -54,5 +54,13 @@
     "directions_api_calls": 0,
     "geocoding_api_calls": 0
   },
-  "wall_ms": 1951.39
+  "wall_ms": 1951.39,
+  "final_code_redeploy": {
+    "deploy_id": "dep-db6ihf95efls73dn0ro0",
+    "commit": "cf101b4f80ee9e45e6b010a3d94920f179a4d666",
+    "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+    "route_cache_hit": true,
+    "directions_calls": 0,
+    "ors_result_license": "CC-BY-SA-4.0"
+  }
 }

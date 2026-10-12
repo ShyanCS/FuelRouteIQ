@@ -13,3 +13,5 @@
 Employer-facing description: FuelRoute IQ is a Django API and interactive map that calculates cost-effective fuel purchases along a real US road route with a 500-mile range and 10 MPG. It explains quantities and baseline savings, audits imported assessment prices, qualifies station-location uncertainty and minimizes directions requests through independent caching. The live public demo uses expressly illustrative prices; the supplied assessment CSV is supported privately. Fixed-route, zero-detour and geographic coverage limitations are disclosed.
 
 The public website, API and repository are verified. Recording the under-five-minute Loom and sending the employer submission remain user actions. Assessment receipt time was not supplied, so the three-day deadline is unverified.
+
+Validated runtime code: `cf101b4f80ee9e45e6b010a3d94920f179a4d666`; [passing CI](https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38292091673), 306 tests/two explicit skips and 74 loopback assertions. Later commits package final verification/documents without changing application behavior.

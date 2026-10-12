@@ -1,0 +1,57 @@
+{
+  "scope": "Actual bounded external application throttle test using invalid empty bodies; zero external provider calls and no vendor quota exhaustion",
+  "statuses": [
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    429
+  ],
+  "retry_after_seconds": "50",
+  "error": {
+    "error": {
+      "code": "HTTP_ERROR",
+      "message": "Request could not be processed.",
+      "details": {
+        "detail": "Request was throttled. Expected available in 50 seconds."
+      }
+    }
+  },
+  "health_after_status": 200,
+  "provider_counts_before": {
+    "directions_calls": 12,
+    "geocoding_calls": 1,
+    "route_hits": 54,
+    "route_misses": 17
+  },
+  "provider_counts_after": {
+    "directions_calls": 12,
+    "geocoding_calls": 1,
+    "route_hits": 55,
+    "route_misses": 17
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "scope": "Four simultaneous actual external HTTPS requests, live ORS, never previously requested pair on public database",
+  "body": {
+    "start": "Cleveland, OH",
+    "finish": "Columbus, OH"
+  },
+  "rows": [
+    {
+      "http_status": 200,
+      "wall_ms": 1239.141,
+      "road_miles": 138.58584615843475,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 0,
+        "candidate_location_quality": {},
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 9.913,
+        "projection_duration_ms": 141.275,
+        "optimizer_duration_ms": 0.027,
+        "baseline_duration_ms": 0.02,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -81.679435,
+              41.478462
+            ],
+            "label": "Cleveland city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -82.98518,
+              39.987367
+            ],
+            "label": "Columbus city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "routing_duration_ms": 615.872,
+        "optimization_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 534.81,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 870.015
+      },
+      "cash": "0.00"
+    },
+    {
+      "http_status": 200,
+      "wall_ms": 2611.928,
+      "road_miles": 138.58584615843475,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 0,
+        "candidate_location_quality": {},
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 6.479,
+        "projection_duration_ms": 0,
+        "optimizer_duration_ms": 0,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -81.679435,
+              41.478462
+            ],
+            "label": "Cleveland city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -82.98518,
+              39.987367
+            ],
+            "label": "Columbus city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": true,
+        "routing_duration_ms": 34.219,
+        "optimization_cache_hit": true,
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 49.75
+      },
+      "cash": "0.00"
+    },
+    {
+      "http_status": 200,
+      "wall_ms": 2574.495,
+      "road_miles": 138.58584615843475,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 0,
+        "candidate_location_quality": {},
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 6.67,
+        "projection_duration_ms": 0,
+        "optimizer_duration_ms": 0,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -81.679435,
+              41.478462
+            ],
+            "label": "Cleveland city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -82.98518,
+              39.987367
+            ],
+            "label": "Columbus city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": true,
+        "routing_duration_ms": 27.802,
+        "optimization_cache_hit": true,
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 43.647
+      },
+      "cash": "0.00"
+    },
+    {
+      "http_status": 200,
+      "wall_ms": 1453.437,
+      "road_miles": 138.58584615843475,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 0,
+        "candidate_location_quality": {},
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 6.306,
+        "projection_duration_ms": 0,
+        "optimizer_duration_ms": 0,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -81.679435,
+              41.478462
+            ],
+            "label": "Cleveland city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -82.98518,
+              39.987367
+            ],
+            "label": "Columbus city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": true,
+        "routing_duration_ms": 32.796,
+        "optimization_cache_hit": true,
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 49.709
+      },
+      "cash": "0.00"
+    }
+  ],
+  "total_directions_calls": 1,
+  "consistent_geometry": "passed",
+  "consistent_cash": "passed"
+}

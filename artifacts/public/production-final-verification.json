@@ -27,12 +27,13 @@
     "mypy": "passed, 4 optimizer files",
     "pip_check": "passed",
     "deploy_security": "passed, zero issues",
-    "dependency_audit": "36 packages, zero known vulnerabilities, no skips"
+    "dependency_audit": "36 packages, zero known vulnerabilities, no skips",
+    "deploy_security_output": "System check identified no issues (0 silenced)."
   },
   "live_ors": "passed",
   "public_health_check_path": "/api/v1/health/",
   "public_url": "https://fuelroute-iq.onrender.com",
-  "loom": "unrecorded, human microphone/account required",
+  "loom": "User will handle recording; script/shot list/requests complete. No URL exists.",
   "last_published_ci": {
     "commit": "3ef91c130887be0fa731fb1b34c7307b12cecdf3",
     "run": "https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38234986464",
@@ -41,6 +42,77 @@
     "skipped": 2,
     "newman_assertions": 74
   },
-  "final_code_ci": "pending new publication",
-  "final_hosted_browser": "pending new JS redeploy"
+  "final_code_ci": {
+    "commit": "cf101b4f80ee9e45e6b010a3d94920f179a4d666",
+    "run": "https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38292091673",
+    "conclusion": "success",
+    "passed": 306,
+    "skipped": 2,
+    "seconds": 24.86,
+    "skip_reasons": [
+      "private assessment CSV absent",
+      "live test not opted in and genuine key absent"
+    ],
+    "loopback_newman_requests": 11,
+    "loopback_newman_assertions": 74,
+    "loopback_newman_failures": 0
+  },
+  "final_hosted_browser": {
+    "status": "passed",
+    "scope": "actual public HTTPS, desktop automated DOM/screenshot checks; phone manual user confirmation",
+    "long_cash_ui_and_api": "139.44",
+    "savings_ui_and_api": "7.57",
+    "pins": 2,
+    "maximum_projection_pixel_error": 0.759937,
+    "short_cash": "0.00",
+    "short_consumed_gallons": 9.800570915851427,
+    "known_initial_consumption_value": "39.20",
+    "estimated_qualification": "passed",
+    "coverage_failure_clears_stale_cash_pins_timeline": "passed",
+    "console_errors": 0,
+    "mobile_automated_status": "unverified, override ineffective",
+    "mobile_manual_status": "passed, user: Phone layout works"
+  },
+  "fresh_clone_final_regressions": {
+    "commit": "cf101b4f80ee9e45e6b010a3d94920f179a4d666",
+    "passed": 36,
+    "seconds": 15.03,
+    "private_csv_present": false
+  },
+  "published_source_secret_scan": "Exact ignored local key/secret/DBURL bytes absent from all sanitized ZIP members",
+  "final_code_deploy": {
+    "id": "dep-db6ihf95efls73dn0ro0",
+    "commit": "cf101b4f80ee9e45e6b010a3d94920f179a4d666",
+    "status": "live",
+    "finished_utc": "2026-10-12T18:38:14Z"
+  },
+  "deployed_concurrency": {
+    "requests": 4,
+    "statuses": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "directions_attempts_total": 1,
+    "geocoding_attempts_total": 0,
+    "consistent_geometry": "passed"
+  },
+  "deployed_application_throttle": {
+    "requests": 29,
+    "last_status": 429,
+    "retry_after_seconds": 50,
+    "provider_calls_added": 0,
+    "health_after": 200
+  },
+  "final_postman": {
+    "requests": 11,
+    "assertions": 74,
+    "failures": 0,
+    "average_ms": 782.9090909090909,
+    "min_ms": 301,
+    "max_ms": 1664,
+    "scope": "Actual external HTTPS after cf101b4 code deployment"
+  },
+  "render_error_log_checkpoint": "No app error entries returned at 2026-10-12T18:46Z UTC"
 }

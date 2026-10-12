@@ -21414,11 +21414,13 @@
     "provider": "ors",
     "profile": "driving-car",
     "recorded": false,
-    "attribution": "openrouteservice | OpenStreetMap contributors",
+    "attribution": "\u00a9 openrouteservice by HeiGIT | Data from OpenStreetMap",
     "endpoint_snap_distances_meters": [
       3.960377281310612,
       13.012984689222652
     ],
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "distance_miles": 964.7988869999205
   },
   "vehicle": {
@@ -21642,7 +21644,7 @@
       "ambiguous_projection_rejections": 0,
       "outside_corridor_rejections": 3
     },
-    "endpoint_resolution_duration_ms": 26.227,
+    "endpoint_resolution_duration_ms": 6.396,
     "projection_duration_ms": 0,
     "optimizer_duration_ms": 0,
     "baseline_duration_ms": 0,
@@ -21673,13 +21675,13 @@
       }
     },
     "route_cache_hit": true,
-    "routing_duration_ms": 49.728,
+    "routing_duration_ms": 38.601,
     "optimization_cache_hit": true,
     "directions_api_calls": 0,
     "geocoding_api_calls": 0,
     "recorded_route_reads": 0,
     "directions_request_duration_ms": 0.0,
     "geocoding_request_duration_ms": 0.0,
-    "request_duration_ms": 124.191
+    "request_duration_ms": 67.611
   }
 }

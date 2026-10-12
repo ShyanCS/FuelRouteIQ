@@ -128,7 +128,7 @@ Actual first external Chicagoâ€“Dallas route-cache miss: **2,597 ms**, one 
 
 ## Verification and Postman
 
-The final local suite includes the private-source audit and genuine opt-in ORS test. Exact current counts/coverage and CI are in [FINAL_SUBMISSION_AUDIT.md](FINAL_SUBMISSION_AUDIT.md). Independent public clone setup, actual hosted HTTP/browser tests and PostgreSQL redeploy persistence are documented separately; mocked, recorded and live evidence are never conflated.
+The final local suite includes the private-source audit and genuine opt-in ORS test. **308 passed, zero skips, 95.22% statement coverage**; final code CI **306 passed/two explicit skips**, plus 74 loopback Newman assertions. Exact evidence and CI links are in [FINAL_SUBMISSION_AUDIT.md](FINAL_SUBMISSION_AUDIT.md). Independent public clone setup, actual hosted HTTP/browser tests and PostgreSQL redeploy persistence are documented separately; mocked, recorded and live evidence are never conflated.
 
 ```sh
 python manage.py check
@@ -157,6 +157,6 @@ Free **Render web service + durable Neon PostgreSQL**; pinned Gunicorn/WhiteNois
 
 [Submission audit](FINAL_SUBMISSION_AUDIT.md) Â· [Implementation report](FINAL_IMPLEMENTATION_REPORT.md) Â· [Licenses/provenance](DATA_SOURCES_AND_LICENSES.md) Â· [Routing/coverage](ROUTING_AND_COVERAGE_REPORT.md) Â· [Submission links](SUBMISSION_LINKS.md)
 
-**Loom is not yet recorded.** The natural [4:30 script](docs/FINAL_LOOM_SCRIPT.md), [shot list](docs/LOOM_SHOT_LIST.md) and [requests](docs/DEMO_REQUESTS.md) are ready for a human microphone recording. Inspect duration under five minutes before sharing; employer submission remains the user's action.
+**Loom is not yet recorded; the user will handle recording.** The natural [4:30 script](docs/FINAL_LOOM_SCRIPT.md), [shot list](docs/LOOM_SHOT_LIST.md) and [requests](docs/DEMO_REQUESTS.md) are ready for a human microphone recording. Inspect duration under five minutes before sharing; employer submission remains the user's action.
 
 Source price sharing rights are unspecified; private CSV/excerpt, secrets, DBs, caches, environments and Git internals are excluded from `FINAL_REVIEW_PACKAGE.zip`. Public illustrative numeric fixtures are CC0. Census data is federal public data; GeoNames endpoint is CC BY 4.0; Natural Earth is public domain; Leaflet's BSD license is retained. ORS response geometry is attributed to **Â© openrouteservice by HeiGIT | Data from OpenStreetMap**, CC BY-SA 4.0; recorded OSRM/OSM provenance is separately attributed. These data licenses do not imply permissions to redistribute private assessment prices.

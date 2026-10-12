@@ -1,0 +1,171 @@
+{
+  "scope": "Actual deployed HTTPS browser on commit cf101b4",
+  "url": "https://fuelroute-iq.onrender.com/",
+  "desktop": {
+    "width": 1280,
+    "height": 900
+  },
+  "states": {
+    "long": {
+      "client_width": 1265,
+      "document_width": 1265,
+      "license": "CC-BY-SA-4.0",
+      "marker_projection": [
+        {
+          "error_px": 0.2801370827410146,
+          "expected_px": [
+            489.822308513417,
+            186.21656989800655
+          ],
+          "rendered_px": [
+            490,
+            186
+          ],
+          "station_id": "7466"
+        },
+        {
+          "error_px": 0.7599362842380553,
+          "expected_px": [
+            408.4845500050435,
+            274.4145818172333
+          ],
+          "rendered_px": [
+            408,
+            275
+          ],
+          "station_id": "64679"
+        }
+      ],
+      "price_basis": "illustrative_test_fixture",
+      "provider": "ors",
+      "recorded": false,
+      "stops": 2,
+      "summary": {
+        "baseline_spend_usd": "147.01",
+        "baseline_status": "feasible_same_model",
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "economic_fuel_cost_usd": null,
+        "end_fuel_gallons": 0,
+        "gallons_consumed": 96.47988869999205,
+        "gallons_purchased": 46.479888699992046,
+        "initial_fuel_value_usd": null,
+        "remaining_fuel_value_usd": null,
+        "route_miles": 964.7988869999205,
+        "savings_percent": 5.14756403315945,
+        "savings_usd": "7.57",
+        "total_acquired_fuel_value_usd": null,
+        "total_refueling_spend_unrounded_usd": "139.4396660999761393462180864",
+        "total_refueling_spend_usd": "139.44",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued"
+      },
+      "timeline": [
+        {
+          "event": "start",
+          "fuel_gallons": 50,
+          "mile_marker": 0
+        },
+        {
+          "event": "before_refuel",
+          "fuel_gallons": 18.41449355872692,
+          "mile_marker": 315.8550644127308
+        },
+        {
+          "event": "after_refuel",
+          "fuel_gallons": 50,
+          "mile_marker": 315.8550644127308
+        },
+        {
+          "event": "before_refuel",
+          "fuel_gallons": 14.76230868156401,
+          "mile_marker": 668.2319775970907
+        },
+        {
+          "event": "after_refuel",
+          "fuel_gallons": 29.656690940282974,
+          "mile_marker": 668.2319775970907
+        },
+        {
+          "event": "destination",
+          "fuel_gallons": 0,
+          "mile_marker": 964.7988869999205
+        }
+      ],
+      "timeline_polyline": "52,28 286.4034898534599,98.75153442845169 286.4034898534599,28 547.9107047141074,106.93242855329662 547.9107047141074,73.56901229376614 768,140",
+      "visible_body": "\u2197\nFuelRoute\nIQ\nA clearer road to smarter fuel spending\nLive ORS road route \u00b7 illustrative prices\nROAD TRIP INTELLIGENCE\nSpend less.\nKnow why.\n\nA fuel plan that explains every gallon, every stop, and every assumption.\n\nStarting point\nDestination\nLocation quality\nVerified stations only\nEstimated city locations\nStarting fuel \u00b7 gal\n\nStrict uses reviewed station sites. Coverage is limited. Estimated mode allows approximate city points and conditional costs.\n\nValue of starting fuel \u00b7 USD optional\n\n500 mile range \u00b7 10 MPG \u00b7 50 gallon tank\n\nFind my fuel plan\n\u2192\nTry a sample journey\nLong \u00b7 Dallas\nShort \u00b7 Milwaukee\nNew York \u2192 Miami\nLos Angeles \u2192 Denver\nSeattle \u2192 San Francisco\n\u25ce\nConfidence you can inspect\n\nVerified markers are reviewed station sites. Amber markers are city approximations. Detours and current prices need confirmation.\n\nFuel stops\n2\n1\nPilot Travel Center #595 Marion, IL\nMarion, IL \u00b7 mile 316\n31.6 gal \u00d7 $3.00\n$94.76\n\u25cf Reviewed station site \u00b7 detour unmeasured\n\nBuy 31.586 gallons (display rounded) at $3.0000000000/gal to fill the tank because no strictly cheaper station or destination is reachable on a full tank.\n\nFuel 18.4 \u2192 50 gal\n\nCoordinate source \u2197\n2\nPilot Travel Center #118\nBenton, AR \u00b7 mile 668\n14.9 gal \u00d7 $3.00\n$44.68\n\u25cf Reviewed station site \u00b7 detour unmeasured\n\nBuy 14.894 gallons (display rounded) at $3.0000000000/gal to reach the destination without buying excess fuel.\n\nFuel 14.8 \u2192 29.7 gal\n\nCoordinate source \u2197\nYOUR JOURNEY, EXPLAINED\nChicago, IL \u2192 Dallas, TX\n\nLive ORS road route \u00b7 Verified station points; zero-detour model \u00b7 15.4 hours driving\n\nILLUSTRATIVE TEST PRICES \u00b7 Reviewed station sites; access and detours unmeasured. This minimizes cash purchases only for the fixed route and eligible candidates.\nROAD DISTANCE\n965\nmiles along the selected route\nEN-ROUTE PURCHASES\n$139.44\nstarting fuel value excluded\nBASELINE SAVINGS\n$7.57\nBaseline $147.01 \u00b7 5.1% savings\nFUEL CONSUMED\n96.5 gal\n46.5 gal purchased during journey\nStarting inventory\n50 gal\nStarting inventory value\nUnknown\nConsumption value (FIFO)\nUnavailable \u00b7 initial value unknown\nCost comparison basis\nEn-route cash purchases\n1\n2\nMN\nMT\nND\nHI\nID\nWA\nAZ\nCA\nCO\nNV\nNM\nOR\nUT\nWY\nAR\nIA\nKS\nMO\nNE\nOK\nSD\nLA\nTX\nCT\nMA\nNH\nRI\nVT\nAL\nFL\nGA\nMS\nSC\nIL\nIN\nKY\nNC\nOH\nTN\nVA\nWI\nWV\nDE\nDC\nMD\nNJ\nNY\nPA\nME\nMI\nAK\nChicago, IL\nDallas, TX\n+\n\u2212\n Leaflet | Natural Earth \u00b7 road geometry \u00a9 OpenStreetMap contributors, \u00a9 openrouteservice by HeiGIT \u00b7 CC BY-SA 4.0\nVerified station site\nApproximate city\nRoad route\nStreet tiles (online)\nLocal state basemap\nFuel along the way\n\nConsumption slopes down. Purchases jump up at the same mile.\n\n0 gal at destination\n0 gal\n0 mi\n25 gal\n482 mi\n50 gal\n965 mi\nStop 1\nStop 2\nAssumptions & data quality\nILLUSTRATIVE TEST PRICES: these deliberately labelled fixture values are not assessment observations or current pump prices. Import the supplied assessment CSV for an assessment-price plan.\nPrices are explicitly illustrative test values; no real pump-price or assessment-price claim applies.\nOptimal purchase spend is conditional on the fixed route, eligible candidates, divisible fuel and zero modeled detour. Road access, actual detour mileage and opening hours are unverified.\nEn-route spend excludes initially owned fuel. $0 purchases does not mean zero consumption or zero economic cost.\nDirections calls: 0 \u00b7 Geocoding calls: 0 \u00b7 Route cache: hit \u00b7 Plan cache: miss \u00b7 API: 791.7 ms \u00b7 Candidates: 6 \u00b7 {\"verified_station\":31}\nInspect the API response\nFuelRoute IQ \u00b7 Django backend assessment\nTransparent prices. Precise accounting. Honest geography."
+    },
+    "short": {
+      "body": "\u2197\nFuelRoute\nIQ\nA clearer road to smarter fuel spending\nLive ORS road route \u00b7 illustrative prices\nROAD TRIP INTELLIGENCE\nSpend less.\nKnow why.\n\nA fuel plan that explains every gallon, every stop, and every assumption.\n\nStarting point\nDestination\nLocation quality\nVerified stations only\nEstimated city locations\nStarting fuel \u00b7 gal\n\nStrict uses reviewed station sites. Coverage is limited. Estimated mode allows approximate city points and conditional costs.\n\nValue of starting fuel \u00b7 USD optional\n\n500 mile range \u00b7 10 MPG \u00b7 50 gallon tank\n\nFind my fuel plan\n\u2192\nTry a sample journey\nLong \u00b7 Dallas\nShort \u00b7 Milwaukee\nNew York \u2192 Miami\nLos Angeles \u2192 Denver\nSeattle \u2192 San Francisco\n\u25ce\nConfidence you can inspect\n\nVerified markers are reviewed station sites. Amber markers are city approximations. Detours and current prices need confirmation.\n\nFuel stops\n0\nStarting fuel covers the trip. Fuel is still consumed; its initial monetary value is unknown unless supplied.\nYOUR JOURNEY, EXPLAINED\nChicago, IL \u2192 Milwaukee, WI\n\nLive ORS road route \u00b7 Verified station points; zero-detour model \u00b7 2.2 hours driving\n\nILLUSTRATIVE TEST PRICES \u00b7 Reviewed station sites; access and detours unmeasured. This minimizes cash purchases only for the fixed route and eligible candidates.\nROAD DISTANCE\n98\nmiles along the selected route\nEN-ROUTE PURCHASES\n$0.00\nstarting fuel value excluded\nBASELINE SAVINGS\n$0.00\nBaseline $0.00\nFUEL CONSUMED\n9.8 gal\n0 gal purchased during journey\nStarting inventory\n50 gal\nStarting inventory value\n$200.00\nConsumption value (FIFO)\n$39.20\nCost comparison basis\nEn-route cash purchases\nMN\nMT\nND\nHI\nID\nWA\nAZ\nCA\nCO\nNV\nNM\nOR\nUT\nWY\nAR\nIA\nKS\nMO\nNE\nOK\nSD\nLA\nTX\nCT\nMA\nNH\nRI\nVT\nAL\nFL\nGA\nMS\nSC\nIL\nIN\nKY\nNC\nOH\nTN\nVA\nWI\nWV\nDE\nDC\nMD\nNJ\nNY\nPA\nME\nMI\nAK\nChicago, IL\nMilwaukee, WI\n+\n\u2212\n Leaflet | Natural Earth \u00b7 road geometry \u00a9 OpenStreetMap contributors, \u00a9 openrouteservice by HeiGIT \u00b7 CC BY-SA 4.0\nVerified station site\nApproximate city\nRoad route\nStreet tiles (online)\nLocal state basemap\nFuel along the way\n\nConsumption slopes down. Purchases jump up at the same mile.\n\n40.2 gal at destination\n0 gal\n0 mi\n25 gal\n49 mi\n50 gal\n98 mi\nAssumptions & data quality\nILLUSTRATIVE TEST PRICES: these deliberately labelled fixture values are not assessment observations or current pump prices. Import the supplied assessment CSV for an assessment-price plan.\nPrices are explicitly illustrative test values; no real pump-price or assessment-price claim applies.\nOptimal purchase spend is conditional on the fixed route, eligible candidates, divisible fuel and zero modeled detour. Road access, actual detour mileage and opening hours are unverified.\nEn-route spend excludes initially owned fuel. $0 purchases does not mean zero consumption or zero economic cost.\nDirections calls: 0 \u00b7 Geocoding calls: 0 \u00b7 Route cache: hit \u00b7 Plan cache: miss \u00b7 API: 239.3 ms \u00b7 Candidates: 0 \u00b7 {\"verified_station\":31}\n",
+      "markers": 0,
+      "stops": 0,
+      "summary": {
+        "baseline_spend_usd": "0.00",
+        "baseline_status": "feasible_same_model",
+        "economic_cost_status": "known_fifo_inventory_valuation",
+        "economic_fuel_cost_usd": "39.20",
+        "end_fuel_gallons": 40.19942908414857,
+        "gallons_consumed": 9.800570915851427,
+        "gallons_purchased": 0,
+        "initial_fuel_value_usd": "200.00",
+        "remaining_fuel_value_usd": "160.80",
+        "route_miles": 98.00570915851428,
+        "savings_percent": null,
+        "savings_usd": "0.00",
+        "total_acquired_fuel_value_usd": "200.00",
+        "total_refueling_spend_unrounded_usd": "0",
+        "total_refueling_spend_usd": "0.00",
+        "valuation_method": "FIFO using supplied initial inventory value and selected observed purchase prices"
+      },
+      "timeline": [
+        {
+          "event": "start",
+          "fuel_gallons": 50,
+          "mile_marker": 0
+        },
+        {
+          "event": "destination",
+          "fuel_gallons": 40.19942908414857,
+          "mile_marker": 98.00570915851428
+        }
+      ]
+    },
+    "estimated": {
+      "mode": "estimated",
+      "scope": "conditional_estimate_city_positions_zero_detour_model",
+      "visible_qualification": "ILLUSTRATIVE TEST PRICES \u00b7 ESTIMATED CITY POSITIONS: highway access, detours and savings are conditional. This minimizes cash purchases only for the fixed route and eligible candidates.",
+      "warnings": [
+        "ILLUSTRATIVE TEST PRICES: these deliberately labelled fixture values are not assessment observations or current pump prices. Import the supplied assessment CSV for an assessment-price plan.",
+        "Prices are explicitly illustrative test values; no real pump-price or assessment-price claim applies.",
+        "Optimal purchase spend is conditional on the fixed route, eligible candidates, divisible fuel and zero modeled detour. Road access, actual detour mileage and opening hours are unverified.",
+        "En-route spend excludes initially owned fuel. $0 purchases does not mean zero consumption or zero economic cost.",
+        "ESTIMATED: city points may be far from the station. This is a conditional illustration, not a navigable fueling plan or a global optimum."
+      ]
+    },
+    "coverage_error": {
+      "error": "UNREACHABLE_FUEL_GAP",
+      "error_text": "UNREACHABLE_FUEL_GAP: Insufficient eligible fueling coverage for this route and initial fuel; this is not proof that real stations do not exist.",
+      "markers": 0,
+      "price_basis": "illustrative_test_fixture",
+      "qualification": "Route geometry may be available, but no feasible fueling plan was returned. Broader estimated coverage is conditional and may also fail.",
+      "road_miles": 815.6582433587847,
+      "road_provider": "ors",
+      "savings_display": "\u2014",
+      "spend_display": "\u2014",
+      "timeline_children": 0
+    }
+  },
+  "mobile": {
+    "status": "PASS, user-reported real-phone manual check",
+    "requested_width": 390,
+    "actual_client_width": 1265,
+    "reason": "Documented viewport override did not change this connected browser surface; no mobile result is fabricated.",
+    "earlier_independent_local_clone": "375px client/document width passed; recorded in production-source-review.json, not a hosted verification",
+    "automated_status": "UNVERIFIED; documented override did not take effect",
+    "manual_evidence": {
+      "source": "Direct human reply in this chat on 13 October 2026",
+      "request": "Open public website on phone, run Chicago-Dallas and check form/results/map for horizontal scrolling",
+      "answer": "Phone layout works",
+      "automation_claim": false
+    }
+  },
+  "console": []
+}

@@ -1,6 +1,7 @@
 {
-  "scope": "Actual external HTTPS Newman/Postman requests against live Render ORS application",
+  "scope": "Actual external HTTPS Newman/Postman after final code redeploy cf101b4; live ORS and public illustrative prices",
   "base_url": "https://fuelroute-iq.onrender.com",
+  "newman_version": "6.2.3",
   "stats": {
     "iterations": {
       "total": 1,
@@ -49,10 +50,10 @@
     }
   },
   "timings": {
-    "responseAverage": 885.2727272727273,
-    "responseMin": 275,
-    "responseMax": 1858,
-    "responseSd": 527.8617399745178,
+    "responseAverage": 782.9090909090909,
+    "responseMin": 301,
+    "responseMax": 1664,
+    "responseSd": 494.45405238237794,
     "dnsAverage": 0,
     "dnsMin": 0,
     "dnsMax": 0,
@@ -61,8 +62,8 @@
     "firstByteMin": 0,
     "firstByteMax": 0,
     "firstByteSd": 0,
-    "started": 1791823771230,
-    "completed": 1791823782103
+    "started": 1791830439276,
+    "completed": 1791830448941
   },
   "failures": []
 }

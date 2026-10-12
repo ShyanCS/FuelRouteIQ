@@ -19,9 +19,9 @@
       "bytes": 147517
     },
     {
-      "path": "/static/demo/app.64cad326f9b5.js",
+      "path": "/static/demo/app.ef2a22b45fee.js",
       "status": 200,
-      "bytes": 13994
+      "bytes": 14858
     }
   ],
   "health": {
@@ -48,7 +48,7 @@
         "finish": "Dallas, TX"
       },
       "http_status": 200,
-      "wall_ms": 544.374,
+      "wall_ms": 1423.673,
       "fuel_summary": {
         "economic_fuel_cost_usd": null,
         "remaining_fuel_value_usd": null,
@@ -95,10 +95,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 3
         },
-        "endpoint_resolution_duration_ms": 6.125,
-        "projection_duration_ms": 0,
-        "optimizer_duration_ms": 0,
-        "baseline_duration_ms": 0,
+        "endpoint_resolution_duration_ms": 7.771,
+        "projection_duration_ms": 490.084,
+        "optimizer_duration_ms": 0.07,
+        "baseline_duration_ms": 0.092,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -126,16 +126,18 @@
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 37.047,
-        "optimization_cache_hit": true,
+        "routing_duration_ms": 40.435,
+        "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 102.038
+        "request_duration_ms": 594.106
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "long-repeat",
@@ -144,7 +146,7 @@
         "finish": "Dallas, TX"
       },
       "http_status": 200,
-      "wall_ms": 586.008,
+      "wall_ms": 697.777,
       "fuel_summary": {
         "economic_fuel_cost_usd": null,
         "remaining_fuel_value_usd": null,
@@ -191,7 +193,7 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 3
         },
-        "endpoint_resolution_duration_ms": 6.07,
+        "endpoint_resolution_duration_ms": 6.814,
         "projection_duration_ms": 0,
         "optimizer_duration_ms": 0,
         "baseline_duration_ms": 0,
@@ -222,16 +224,18 @@
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 32.676,
+        "routing_duration_ms": 40.401,
         "optimization_cache_hit": true,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 89.148
+        "request_duration_ms": 118.086
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "changed-fuel",
@@ -241,7 +245,7 @@
         "initial_fuel_gallons": 45
       },
       "http_status": 200,
-      "wall_ms": 912.908,
+      "wall_ms": 1057.61,
       "fuel_summary": {
         "economic_fuel_cost_usd": null,
         "remaining_fuel_value_usd": null,
@@ -288,10 +292,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 3
         },
-        "endpoint_resolution_duration_ms": 7.499,
-        "projection_duration_ms": 350.931,
-        "optimizer_duration_ms": 0.061,
-        "baseline_duration_ms": 0.074,
+        "endpoint_resolution_duration_ms": 6.466,
+        "projection_duration_ms": 559.341,
+        "optimizer_duration_ms": 0.078,
+        "baseline_duration_ms": 0.092,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -319,16 +323,18 @@
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 45.323,
+        "routing_duration_ms": 38.516,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 508.613
+        "request_duration_ms": 659.911
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "estimated",
@@ -338,7 +344,7 @@
         "location_mode": "estimated"
       },
       "http_status": 200,
-      "wall_ms": 1471.508,
+      "wall_ms": 1562.251,
       "fuel_summary": {
         "economic_fuel_cost_usd": null,
         "remaining_fuel_value_usd": null,
@@ -385,10 +391,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 3
         },
-        "endpoint_resolution_duration_ms": 6.411,
-        "projection_duration_ms": 943.232,
-        "optimizer_duration_ms": 0.077,
-        "baseline_duration_ms": 0.104,
+        "endpoint_resolution_duration_ms": 7.716,
+        "projection_duration_ms": 1006.578,
+        "optimizer_duration_ms": 0.085,
+        "baseline_duration_ms": 0.108,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -416,16 +422,18 @@
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 38.274,
+        "routing_duration_ms": 37.83,
         "optimization_cache_hit": false,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 1095.8
+        "request_duration_ms": 1176.26
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "short",
@@ -435,7 +443,7 @@
         "initial_fuel_cost_usd": "200.00"
       },
       "http_status": 200,
-      "wall_ms": 1051.438,
+      "wall_ms": 532.293,
       "fuel_summary": {
         "economic_fuel_cost_usd": "39.20",
         "remaining_fuel_value_usd": "160.80",
@@ -474,10 +482,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 8.881,
-        "projection_duration_ms": 98.4,
-        "optimizer_duration_ms": 0.026,
-        "baseline_duration_ms": 0.017,
+        "endpoint_resolution_duration_ms": 8.722,
+        "projection_duration_ms": 36.571,
+        "optimizer_duration_ms": 0.028,
+        "baseline_duration_ms": 0.019,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -504,17 +512,19 @@
             "local_index": true
           }
         },
-        "route_cache_hit": false,
-        "routing_duration_ms": 601.734,
+        "route_cache_hit": true,
+        "routing_duration_ms": 35.816,
         "optimization_cache_hit": false,
-        "directions_api_calls": 1,
+        "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
-        "directions_request_duration_ms": 469.112,
+        "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 743.8
+        "request_duration_ms": 192.446
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "new-york-miami",
@@ -523,7 +533,7 @@
         "finish": "Miami, FL"
       },
       "http_status": 200,
-      "wall_ms": 2178.481,
+      "wall_ms": 1555.89,
       "fuel_summary": {
         "economic_fuel_cost_usd": null,
         "remaining_fuel_value_usd": null,
@@ -574,10 +584,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 9.504,
-        "projection_duration_ms": 601.834,
-        "optimizer_duration_ms": 0.127,
-        "baseline_duration_ms": 0.138,
+        "endpoint_resolution_duration_ms": 10.601,
+        "projection_duration_ms": 603.604,
+        "optimizer_duration_ms": 0.096,
+        "baseline_duration_ms": 0.078,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -604,17 +614,19 @@
             "local_index": true
           }
         },
-        "route_cache_hit": false,
-        "routing_duration_ms": 994.175,
+        "route_cache_hit": true,
+        "routing_duration_ms": 45.417,
         "optimization_cache_hit": false,
-        "directions_api_calls": 1,
+        "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
-        "directions_request_duration_ms": 871.294,
+        "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 1767.943
+        "request_duration_ms": 773.083
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "la-denver",
@@ -623,7 +635,7 @@
         "finish": "Denver, CO"
       },
       "http_status": 200,
-      "wall_ms": 2307.495,
+      "wall_ms": 1769.698,
       "fuel_summary": {
         "economic_fuel_cost_usd": null,
         "remaining_fuel_value_usd": null,
@@ -672,10 +684,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 10.749,
-        "projection_duration_ms": 661.907,
-        "optimizer_duration_ms": 0.099,
-        "baseline_duration_ms": 0.093,
+        "endpoint_resolution_duration_ms": 11.238,
+        "projection_duration_ms": 712.987,
+        "optimizer_duration_ms": 0.127,
+        "baseline_duration_ms": 0.112,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -702,17 +714,19 @@
             "local_index": true
           }
         },
-        "route_cache_hit": false,
-        "routing_duration_ms": 985.739,
+        "route_cache_hit": true,
+        "routing_duration_ms": 48.426,
         "optimization_cache_hit": false,
-        "directions_api_calls": 1,
+        "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
-        "directions_request_duration_ms": 774.402,
+        "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 1776.151
+        "request_duration_ms": 1001.881
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "seattle-sf",
@@ -721,7 +735,7 @@
         "finish": "San Francisco, CA"
       },
       "http_status": 422,
-      "wall_ms": 2261.039,
+      "wall_ms": 1005.85,
       "fuel_summary": null,
       "stops": null,
       "station_ids": [],
@@ -729,9 +743,9 @@
       "road_miles": 815.6582433587847,
       "road_points": 7663,
       "meta": {
-        "endpoint_resolution_duration_ms": 9.199,
-        "projection_duration_ms": 702.727,
-        "optimizer_duration_ms": 0.095,
+        "endpoint_resolution_duration_ms": 10.622,
+        "projection_duration_ms": 565.371,
+        "optimizer_duration_ms": 0.093,
         "baseline_duration_ms": 0,
         "endpoints": {
           "start": {
@@ -759,21 +773,45 @@
             "local_index": true
           }
         },
-        "route_cache_hit": false,
-        "routing_duration_ms": 974.925,
+        "route_cache_hit": true,
+        "routing_duration_ms": 36.762,
+        "price_basis": "illustrative_test_fixture",
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
         "optimization_cache_hit": false,
         "projection_diagnostics": {
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "directions_api_calls": 1,
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "location_mode": "strict",
+        "candidate_count": 3,
+        "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
-        "directions_request_duration_ms": 848.352,
+        "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 1761.084
+        "request_duration_ms": 628.152
       },
-      "error_code": "UNREACHABLE_FUEL_GAP"
+      "error_code": "UNREACHABLE_FUEL_GAP",
+      "error_message": "Insufficient eligible fueling coverage for this route and initial fuel; this is not proof that real stations do not exist.",
+      "error_details": {
+        "from_mile": 218.9210900780842,
+        "to_mile": 815.6582433587847,
+        "available_range_miles": 500.0,
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 3,
+        "geo_qualification": "Only verified station points are eligible.",
+        "suggested_action": "Try location_mode=estimated for a visibly qualified city-based estimate; feasibility is not guaranteed.",
+        "eligible_location_quality": {
+          "verified_station": 3
+        },
+        "plan_available": false
+      }
     },
     {
       "name": "unseen-austin-houston",
@@ -782,7 +820,7 @@
         "finish": "Houston, TX"
       },
       "http_status": 200,
-      "wall_ms": 1226.064,
+      "wall_ms": 773.164,
       "fuel_summary": {
         "economic_fuel_cost_usd": null,
         "remaining_fuel_value_usd": null,
@@ -821,10 +859,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 9.903,
-        "projection_duration_ms": 137.201,
-        "optimizer_duration_ms": 0.026,
-        "baseline_duration_ms": 0.049,
+        "endpoint_resolution_duration_ms": 10.224,
+        "projection_duration_ms": 84.657,
+        "optimizer_duration_ms": 0.019,
+        "baseline_duration_ms": 0.055,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -851,17 +889,19 @@
             "local_index": true
           }
         },
-        "route_cache_hit": false,
-        "routing_duration_ms": 633.563,
+        "route_cache_hit": true,
+        "routing_duration_ms": 31.071,
         "optimization_cache_hit": false,
-        "directions_api_calls": 1,
+        "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
-        "directions_request_duration_ms": 540.229,
+        "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 881.5
+        "request_duration_ms": 237.611
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "foreign",
@@ -870,7 +910,7 @@
         "finish": "Toronto, ON"
       },
       "http_status": 422,
-      "wall_ms": 309.595,
+      "wall_ms": 302.799,
       "fuel_summary": null,
       "stops": null,
       "station_ids": [],
@@ -883,15 +923,17 @@
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 3.882
+        "request_duration_ms": 3.758
       },
-      "error_code": "LOCATION_OUTSIDE_US"
+      "error_code": "LOCATION_OUTSIDE_US",
+      "error_message": "Only the 50 US states and DC are supported; finish the location with a two-letter US state code.",
+      "error_details": {}
     },
     {
       "name": "malformed",
       "request": null,
       "http_status": 400,
-      "wall_ms": 329.328,
+      "wall_ms": 333.406,
       "fuel_summary": null,
       "stops": null,
       "station_ids": [],
@@ -899,7 +941,11 @@
       "road_miles": null,
       "road_points": 0,
       "meta": null,
-      "error_code": "INVALID_INPUT"
+      "error_code": "INVALID_INPUT",
+      "error_message": "Request could not be processed.",
+      "error_details": {
+        "detail": "JSON parse error - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
     },
     {
       "name": "precise-address",
@@ -908,7 +954,7 @@
         "finish": "Milwaukee, WI"
       },
       "http_status": 200,
-      "wall_ms": 1622.159,
+      "wall_ms": 507.75,
       "fuel_summary": {
         "economic_fuel_cost_usd": null,
         "remaining_fuel_value_usd": null,
@@ -947,10 +993,10 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 495.771,
-        "projection_duration_ms": 71.427,
-        "optimizer_duration_ms": 0.021,
-        "baseline_duration_ms": 0.017,
+        "endpoint_resolution_duration_ms": 8.201,
+        "projection_duration_ms": 63.366,
+        "optimizer_duration_ms": 0.02,
+        "baseline_duration_ms": 0.018,
         "endpoints": {
           "start": {
             "coordinates": [
@@ -960,7 +1006,7 @@
             "label": "233 South Wacker Drive, Central, Chicago, IL, USA",
             "precision": "provider_address",
             "source": "https://openrouteservice.org/services/",
-            "cache_hit": false,
+            "cache_hit": true,
             "local_index": false
           },
           "finish": {
@@ -976,17 +1022,19 @@
             "local_index": true
           }
         },
-        "route_cache_hit": false,
-        "routing_duration_ms": 658.711,
+        "route_cache_hit": true,
+        "routing_duration_ms": 31.101,
         "optimization_cache_hit": false,
-        "directions_api_calls": 1,
-        "geocoding_api_calls": 1,
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
-        "directions_request_duration_ms": 581.182,
-        "geocoding_request_duration_ms": 444.547,
-        "request_duration_ms": 1252.632
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 196.011
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "precise-address-repeat",
@@ -995,7 +1043,7 @@
         "finish": "Milwaukee, WI"
       },
       "http_status": 200,
-      "wall_ms": 386.402,
+      "wall_ms": 360.143,
       "fuel_summary": {
         "economic_fuel_cost_usd": null,
         "remaining_fuel_value_usd": null,
@@ -1034,7 +1082,7 @@
           "ambiguous_projection_rejections": 0,
           "outside_corridor_rejections": 0
         },
-        "endpoint_resolution_duration_ms": 10.281,
+        "endpoint_resolution_duration_ms": 10.14,
         "projection_duration_ms": 0,
         "optimizer_duration_ms": 0,
         "baseline_duration_ms": 0,
@@ -1064,16 +1112,18 @@
           }
         },
         "route_cache_hit": true,
-        "routing_duration_ms": 38.754,
+        "routing_duration_ms": 34.135,
         "optimization_cache_hit": true,
         "directions_api_calls": 0,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
         "directions_request_duration_ms": 0.0,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 59.494
+        "request_duration_ms": 53.208
       },
-      "error_code": null
+      "error_code": null,
+      "error_message": null,
+      "error_details": {}
     },
     {
       "name": "unsupported-distance-1",
@@ -1082,7 +1132,7 @@
         "finish": "Prudhoe Bay, AK"
       },
       "http_status": 422,
-      "wall_ms": 820.748,
+      "wall_ms": 1427.025,
       "fuel_summary": null,
       "stops": null,
       "station_ids": [],
@@ -1090,7 +1140,7 @@
       "road_miles": null,
       "road_points": 0,
       "meta": {
-        "endpoint_resolution_duration_ms": 10.164,
+        "endpoint_resolution_duration_ms": 11.079,
         "projection_duration_ms": 0,
         "optimizer_duration_ms": 0,
         "baseline_duration_ms": 0,
@@ -1124,11 +1174,13 @@
         "directions_api_calls": 1,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
-        "directions_request_duration_ms": 458.807,
+        "directions_request_duration_ms": 1060.814,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 530.028
+        "request_duration_ms": 1130.688
       },
-      "error_code": "ROUTE_LIMIT_OR_UNAVAILABLE"
+      "error_code": "ROUTE_LIMIT_OR_UNAVAILABLE",
+      "error_message": "Route exceeds provider restrictions or could not be found (ORS maximum 6,000 km).",
+      "error_details": {}
     },
     {
       "name": "unsupported-distance-2",
@@ -1137,7 +1189,7 @@
         "finish": "Prudhoe Bay, AK"
       },
       "http_status": 422,
-      "wall_ms": 821.506,
+      "wall_ms": 820.733,
       "fuel_summary": null,
       "stops": null,
       "station_ids": [],
@@ -1145,7 +1197,7 @@
       "road_miles": null,
       "road_points": 0,
       "meta": {
-        "endpoint_resolution_duration_ms": 6.92,
+        "endpoint_resolution_duration_ms": 6.699,
         "projection_duration_ms": 0,
         "optimizer_duration_ms": 0,
         "baseline_duration_ms": 0,
@@ -1179,11 +1231,13 @@
         "directions_api_calls": 1,
         "geocoding_api_calls": 0,
         "recorded_route_reads": 0,
-        "directions_request_duration_ms": 392.562,
+        "directions_request_duration_ms": 449.936,
         "geocoding_request_duration_ms": 0.0,
-        "request_duration_ms": 468.754
+        "request_duration_ms": 516.435
       },
-      "error_code": "ROUTE_LIMIT_OR_UNAVAILABLE"
+      "error_code": "ROUTE_LIMIT_OR_UNAVAILABLE",
+      "error_message": "Route exceeds provider restrictions or could not be found (ORS maximum 6,000 km).",
+      "error_details": {}
     }
   ],
   "stats": {
@@ -1212,10 +1266,10 @@
     },
     "local_places": 32071,
     "cache_metrics": {
-      "directions_calls": 9,
+      "directions_calls": 11,
       "geocoding_calls": 1,
-      "route_hits": 9,
-      "route_misses": 14
+      "route_hits": 33,
+      "route_misses": 16
     },
     "metrics_scope": "local database cache lifetime; not provider account quota"
   },

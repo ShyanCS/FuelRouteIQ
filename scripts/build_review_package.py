@@ -95,6 +95,7 @@ ARTIFACTS = {
     "artifacts/public/production-throttle.json",
     "artifacts/public/production-first-probe.json",
     "artifacts/public/production-final-verification.json",
+    "artifacts/public/production-concurrency.json",
 }
 
 
