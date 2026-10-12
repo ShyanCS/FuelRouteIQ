@@ -1,0 +1,103 @@
+{
+  "scope": "Actual live ORS geometry compared with original recorded OSRM; station eligibility recomputed independently, no prices included",
+  "roads": {
+    "recorded_OSRM": {
+      "miles": 961.4738676131392,
+      "geometry_points": 9539,
+      "eligible_stations": [
+        {
+          "id": "7466",
+          "name": "PILOT #595",
+          "mile": 312.5363882686531,
+          "lateral_miles": 0.36310759238624596
+        },
+        {
+          "id": "60373",
+          "name": "FLYING J #571",
+          "mile": 375.0439464169761,
+          "lateral_miles": 0.14040441536953618
+        },
+        {
+          "id": "63596",
+          "name": "PILOT TRAVEL CENTERS #442",
+          "mile": 435.50988629689215,
+          "lateral_miles": 0.4366764259934201
+        },
+        {
+          "id": "10077",
+          "name": "FLYING J TRAVEL PLAZA #607",
+          "mile": 519.4927293891827,
+          "lateral_miles": 3.1464437995018244
+        },
+        {
+          "id": "64679",
+          "name": "PILOT TRAVEL CENTER #118",
+          "mile": 664.9095289957983,
+          "lateral_miles": 0.1462878775272604
+        },
+        {
+          "id": "63794",
+          "name": "PILOT TRAVEL CENTERS #157",
+          "mile": 886.7893993115543,
+          "lateral_miles": 0.23005922492395528
+        }
+      ],
+      "diagnostics": {
+        "ambiguous_projection_rejections": 0,
+        "outside_corridor_rejections": 3
+      }
+    },
+    "live_ORS": {
+      "miles": 964.7988869999205,
+      "geometry_points": 5351,
+      "eligible_stations": [
+        {
+          "id": "7466",
+          "name": "PILOT #595",
+          "mile": 315.85506441272975,
+          "lateral_miles": 0.36263660170540096
+        },
+        {
+          "id": "60373",
+          "name": "FLYING J #571",
+          "mile": 378.3638251857447,
+          "lateral_miles": 0.14036681544003574
+        },
+        {
+          "id": "63596",
+          "name": "PILOT TRAVEL CENTERS #442",
+          "mile": 438.8303895300781,
+          "lateral_miles": 0.4366764259934201
+        },
+        {
+          "id": "10077",
+          "name": "FLYING J TRAVEL PLAZA #607",
+          "mile": 522.814255529933,
+          "lateral_miles": 3.1464437995018244
+        },
+        {
+          "id": "64679",
+          "name": "PILOT TRAVEL CENTER #118",
+          "mile": 668.2319775970948,
+          "lateral_miles": 0.14624938726921854
+        },
+        {
+          "id": "63794",
+          "name": "PILOT TRAVEL CENTERS #157",
+          "mile": 890.113653598692,
+          "lateral_miles": 0.2303073912728953
+        }
+      ],
+      "diagnostics": {
+        "ambiguous_projection_rejections": 0,
+        "outside_corridor_rejections": 3
+      }
+    }
+  },
+  "live_selected_ids": [
+    "63596",
+    "10077"
+  ],
+  "station_ids_unchanged": true,
+  "directions_calls_this_comparison": 0
+}

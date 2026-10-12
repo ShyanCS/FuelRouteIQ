@@ -1,11 +1,7 @@
-# Employer walkthrough: target 4 minutes 30 seconds
+# Final employer walkthrough — target 4:30
 
-Use the current deployed URL from `SUBMISSION_LINKS.md`, the hosted Postman environment and the public repository. Follow `FINAL_LOOM_SCRIPT.md` and `LOOM_SHOT_LIST.md`. Read actual JSON immediately before recording; do not copy cash/savings from historical reports.
+Open https://fuelroute-iq.onrender.com/, the hosted Postman environment, the public repository and `FINAL_SUBMISSION_AUDIT.md`. Follow `FINAL_LOOM_SCRIPT.md` and `LOOM_SHOT_LIST.md`. Wake the free service and run Chicago–Dallas once before recording. A warm repeat honestly demonstrates zero new directions calls; do not clear the shared public cache.
 
-The public dataset has **31 reviewed station sites and illustrative prices**. It is distinct from the original private 8,151-row assessment file, which remains importable for local assessment results. Five real OSRM recordings are supported when recorded mode is active. A missing ORS key means successful authenticated routing is unverified: state this clearly and never describe replay as live directions.
+Current public sample: live ORS, 964.798887 miles, two reviewed stops, $139.44 cash purchases, $147.01 same-model baseline and $7.57 savings, using **illustrative prices**. Read actual JSON immediately before recording; future geometry/data changes can change these numbers. Thirty-one reviewed sites are bundled; the private 8,151-row assessment CSV is supported separately. The short live Milwaukee route is 98.005709 miles: 9.800571 gallons consumed and zero cash purchases with a full initial tank.
 
-The script covers map, API, fuel ledger, repeat cache behavior, Django adapter/optimizer and independent tests. Explicitly label zero modeled detours, limited coverage and the known Seattle gap. A zero-cash short journey still consumes initially owned fuel.
-
-Do not show `.env`, deployment secret values, authorization headers or command history containing credentials. GitHub/free deployment are authorized; submitting to the employer remains the user's action.
-
-No Loom recording or share link is claimed until a real recording exists. Record with the human microphone in Loom after login, speak naturally, and check duration before sharing. If the service has slept, wake it and run the sample once before beginning; explain the repeat as a warm cache hit. Keep total duration under five minutes.
+The genuine provider, public HTTPS, GitHub and hosted Postman tests are verified. State narrow coverage and zero-detour assumptions plainly. Do not show `.env`, deployment environments, authorization headers or credentials. Native screen/microphone and Loom creation are not exposed by the connected tools; log into Loom, select screen plus microphone, record this sequence, inspect playback/duration and share the actual link. No recording/link is claimed yet. Keep the final video under five minutes and submit it yourself.

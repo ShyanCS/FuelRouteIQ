@@ -217,7 +217,7 @@ def test_missing_verification_id_requires_explicit_opt_in(prepared_db, tmp_path)
 def test_concurrency_with_actual_database_cache(prepared_db, settings, monkeypatch):
     settings.CACHES = {
         "default": {
-            "BACKEND": "django.core.cache.backends.db.DatabaseCache",
+            "BACKEND": "routing.sqlite_cache.SQLiteDatabaseCache",
             "LOCATION": "phase2_concurrency_cache",
         }
     }

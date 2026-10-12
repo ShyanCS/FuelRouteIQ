@@ -1,12 +1,16 @@
-# Recording interactions — total target 4:30
+# Loom shot list — target 4:30, maximum 5:00
 
-1. 0:00 — Open README at repository top; show public links and assessment defaults.
-2. 0:25 — Open the actual hosted homepage. Show provider and illustrative-price labels. Submit Chicago, IL → Dallas, TX in strict mode. Pan the real route, inspect one selected pin and its purchase.
-3. 1:15 — Open Postman with the hosted environment from `SUBMISSION_LINKS.md`. Send request 1. Expand `fuel_stops`, `fuel_summary`, `cost_basis` and `meta`; read actual values.
-4. 1:55 — Send short request 2. Show positive consumed gallons and zero purchases. Do not call its fuel cost zero.
-5. 2:10 — Send repeat request 3. Show route/plan cache hit and zero directions calls. Send changed-fuel request 11 if time permits, showing geometry reuse.
-6. 2:40 — In GitHub/editor show `api/views.py`, `api/service.py`, `routing/provider.py` and `optimizer/engine.py`. Highlight their responsibilities and next-cheaper decision. Show the independent oracle in `tests/test_optimizer.py`.
-7. 3:30 — Show final test/CI/production Postman evidence in `FINAL_SUBMISSION_AUDIT.md`; state actual skips and provider status. Return to the UI, switch estimated mode, show conditional labels and the paired fuel timeline. If needed show Seattle’s useful gap response.
-8. 4:15 — Return to README links and close. Stop by 4:30; review the recording and publish only if under five minutes and free of secret screens.
+Prepare three tabs: live application, hosted Postman collection, GitHub source/audit. Avoid Render environment screens and secret files. Pre-wake the free service. Use the actual response figures at recording time.
 
-Prepare the service before recording to avoid free-host wake latency on camera. Do not clear a shared public cache or run provider load tests during the recording. A warm repeat is an honest demonstration; a cold one-call claim needs the separately captured cold evidence.
+| Time | Screen interaction |
+|---|---|
+| 0:00–0:20 | Live homepage; introduce Django, 500-mile range, 10 MPG. |
+| 0:20–1:05 | Click Chicago–Dallas, strict mode, Optimize. Show live-provider and illustrative-price badges, real road, two station pins, cash/consumption/savings and fuel jumps. Click one pin to show gallons and reviewed source. |
+| 1:05–1:55 | Postman: select hosted environment, send Long strict request. Expand route/provider, fuel_stops, fuel_summary, cost_basis and meta. |
+| 1:55–2:20 | Repeat identical request; show route_cache_hit and directions_api_calls=0. Change initial fuel to 45; same route cache, recalculated purchases. |
+| 2:20–2:45 | Send short known-value request; distinguish zero cash, positive consumption and valued initial inventory. |
+| 2:45–3:35 | GitHub: api/service.py → routing/provider.py → optimizer/engine.py → tests/test_optimizer.py. Explain fixed-route greedy and independent DP. |
+| 3:35–4:10 | Audit: actual local/CI/Newman counts, genuine provider evidence. Return UI: estimated qualification and/or Seattle useful gap. State limited coverage and no routed detours. |
+| 4:10–4:30 | README links/setup/Postman; close and stop recording. |
+
+After recording: watch it, confirm no secrets, check under five minutes, copy the real Loom share URL and add it to README/SUBMISSION_LINKS. Do not submit to the employer automatically.

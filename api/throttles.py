@@ -31,3 +31,7 @@ class RouteGlobalThrottle(RouteClientThrottle):
 
     def get_cache_key(self, request, view):
         return self.cache_format % {"scope": self.scope, "ident": "all"}
+
+
+class RouteGlobalMinuteThrottle(RouteGlobalThrottle):
+    scope = "route_global_minute"

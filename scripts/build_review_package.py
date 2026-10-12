@@ -88,6 +88,13 @@ ARTIFACTS = {
     "artifacts/public/production-dependency-audit.json",
     "artifacts/public/final-review-local.png",
     "artifacts/public/production-source-review.json",
+    "artifacts/public/production-corridor-comparison.json",
+    "artifacts/public/production-provider-errors.json",
+    "artifacts/public/production-live-response.json",
+    "artifacts/public/production-redeploy.json",
+    "artifacts/public/production-throttle.json",
+    "artifacts/public/production-first-probe.json",
+    "artifacts/public/production-final-verification.json",
 }
 
 

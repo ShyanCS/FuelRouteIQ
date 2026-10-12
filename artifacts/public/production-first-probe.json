@@ -1,0 +1,35 @@
+{
+  "base_url": "https://fuelroute-iq.onrender.com",
+  "observed_date": "2026-10-12",
+  "scope": "Initial real external HTTPS probe transcribed from its tool output; cold means a route-cache miss, not service spin-up. This is historical measured evidence, never emitted as a new measurement by the reusable validator.",
+  "deployed_code_commit": "3ef91c130887be0fa731fb1b34c7307b12cecdf3",
+  "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+  "price_basis": "illustrative_test_fixture",
+  "body": {
+    "start": "Chicago, IL",
+    "finish": "Dallas, TX"
+  },
+  "cold": {
+    "wall_ms": 2597.073,
+    "pipeline_ms": 1839.753,
+    "directions_calls": 1,
+    "geocoding_calls": 0,
+    "directions_request_ms": 1090.625,
+    "projection_ms": 488.413,
+    "optimizer_ms": 0.107,
+    "route_cache_hit": false
+  },
+  "warm": {
+    "wall_ms": 473.236,
+    "pipeline_ms": 107.235,
+    "directions_calls": 0,
+    "geocoding_calls": 0,
+    "route_cache_hit": true,
+    "optimization_cache_hit": true
+  },
+  "route": {
+    "road_miles": 964.7988869999205,
+    "points": 5351,
+    "recorded": false
+  }
+}

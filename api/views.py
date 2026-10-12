@@ -10,14 +10,14 @@ from rest_framework.response import Response
 from api.errors import PlanningError
 from api.serializers import OptimizeRequestSerializer
 from api.service import run_planning
-from api.throttles import RouteClientThrottle, RouteGlobalThrottle
+from api.throttles import RouteClientThrottle, RouteGlobalMinuteThrottle, RouteGlobalThrottle
 from routing.provider import CallCounts
 from stations.importer import active_dataset, coverage
 from stations.models import City
 
 
 @api_view(["POST"])
-@throttle_classes([RouteClientThrottle, RouteGlobalThrottle])
+@throttle_classes([RouteClientThrottle, RouteGlobalMinuteThrottle, RouteGlobalThrottle])
 def optimize_route(request):
     started = time.perf_counter()
     # Enforce Django's body-size guard before DRF's streaming JSON parser.

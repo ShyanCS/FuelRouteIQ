@@ -34,6 +34,13 @@ def plan_response(route, data, dataset, projected, timings=None):
     ]
     mode = data["location_mode"]
     geo_coverage = coverage(dataset) if dataset else {}
+    timings.update(
+        {
+            "location_coverage": geo_coverage,
+            "location_mode": mode,
+            "candidate_count": len(candidates),
+        }
+    )
     route_payload = {**route, "distance_miles": float(distance)}
     started = time.perf_counter()
     try:
@@ -132,7 +139,9 @@ def plan_response(route, data, dataset, projected, timings=None):
     warnings = [
         "Fuel prices are undated assessment snapshots, not live pump prices."
         if price_basis == "assessment_snapshot"
-        else "Prices are explicitly illustrative test values; no real pump-price or assessment-price claim applies.",
+        else "Prices are explicitly illustrative test values; no real pump-price or assessment-price claim applies."
+        if price_basis == "illustrative_test_fixture"
+        else "No fuel-price dataset is loaded. This plan needs no en-route purchases; initial fuel value is not invented.",
         "Optimal purchase spend is conditional on the fixed route, eligible candidates, divisible fuel and zero modeled detour. Road access, actual detour mileage and opening hours are unverified.",
         "En-route spend excludes initially owned fuel. $0 purchases does not mean zero consumption or zero economic cost.",
     ]
@@ -277,9 +286,23 @@ def run_planning(data, counts, metadata):
             route = validate_endpoint_snaps(route, start["coordinates"], finish["coordinates"])
             cache.set(key, route, settings.ROUTE_CACHE_TTL_SECONDS)
     metadata["routing_duration_ms"] = round((time.perf_counter() - t) * 1000, 3)
+    if route.get("provider") == "ors":
+        # Current HeiGIT result licensing also applies to cached road responses.
+        route = {
+            **route,
+            "attribution": "© openrouteservice by HeiGIT | Data from OpenStreetMap",
+            "license": "CC-BY-SA-4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        }
     dataset = active_dataset()
+    metadata.update(
+        {
+            "price_basis": dataset.price_basis if dataset else "unavailable",
+            "dataset_revision": str(dataset.revision) if dataset else None,
+        }
+    )
     plan_key = cache_key(
-        "plan-v2",
+        "plan-v3",
         {
             "route": key,
             "route_content": cache_key("content", route),

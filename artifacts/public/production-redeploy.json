@@ -1,0 +1,58 @@
+{
+  "scope": "Actual external HTTPS after Render health-setting redeployment",
+  "deploy_id": "dep-db6iaqgm7kps73e0gefg",
+  "commit": "3ef91c130887be0fa731fb1b34c7307b12cecdf3",
+  "http_health_check_path": "/api/v1/health/",
+  "health": {
+    "status": "ok",
+    "django_version": "6.1.2",
+    "routing_provider": "ors",
+    "live_routing_configured": true,
+    "fuel_dataset_loaded": true,
+    "local_places": 32071,
+    "price_basis": "illustrative_test_fixture",
+    "recorded_route_count": 5
+  },
+  "stats": {
+    "dataset": {
+      "sha256": "463feddc91c99dcbb045aab4e845000872bcc58ec404b46e53607f6f3ac860dd",
+      "price_basis": "illustrative_test_fixture",
+      "source_rows": 31,
+      "price_policy": "observed price closest to median; lower observed price breaks ties",
+      "rejected_rows": 0,
+      "deduped_us_ids": 31,
+      "us_source_rows": 31,
+      "distinct_all_ids": 31,
+      "exit_address_rows": 30,
+      "location_coverage": {
+        "verified_station": 31
+      },
+      "canadian_source_rows": 0,
+      "identity_conflicts_us": 0,
+      "conflicting_price_ids_us": 0,
+      "verified_evidence_sha256": "0f2978f5b3ba0b047582de9fc27a8d0992b86eb1936c4fcb53bdcca9d9c07fb0",
+      "conflicting_price_ids_all": 0
+    },
+    "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+    "location_coverage": {
+      "verified_station": 31
+    },
+    "local_places": 32071,
+    "cache_metrics": {
+      "directions_calls": 9,
+      "geocoding_calls": 1,
+      "route_hits": 20,
+      "route_misses": 14
+    },
+    "metrics_scope": "local database cache lifetime; not provider account quota"
+  },
+  "dataset_revision_before": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+  "dataset_revision_after": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+  "cache": {
+    "route_cache_hit": true,
+    "optimization_cache_hit": false,
+    "directions_api_calls": 0,
+    "geocoding_api_calls": 0
+  },
+  "wall_ms": 1951.39
+}

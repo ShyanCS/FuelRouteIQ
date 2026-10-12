@@ -1,32 +1,45 @@
-============================= test session starts =============================
-platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0
-django: version: 6.1.2, settings: fuelroute.settings (from ini)
-rootdir: C:\Users\shyan\Desktop\Code\Spotter backend
-configfile: pyproject.toml
-testpaths: tests
-plugins: anyio-4.15.1, cov-7.1.0, django-4.14.0
-collected 307 items
-
-tests\test_api.py ..........................                             [  8%]
-tests\test_endpoint_trust.py ...                                         [  9%]
-tests\test_importer.py ..........                                        [ 12%]
-tests\test_live.py s                                                     [ 13%]
-tests\test_phase2.py .........                                           [ 15%]
-tests\test_production.py ........                                        [ 18%]
-tests\test_reliability.py ...........                                    [ 22%]
-tests\test_phase2.py .                                                   [ 22%]
-tests\test_optimizer.py ................................................ [ 38%]
-........................................................................ [ 61%]
-........................................................................ [ 85%]
-.......................                                                  [ 92%]
-tests\test_phase2.py ....                                                [ 93%]
-tests\test_projection.py ..                                              [ 94%]
-tests\test_reliability.py .................                              [100%]
-
+........................................................................ [ 23%]
+........................................................................ [ 46%]
+........................................................................ [ 70%]
+........................................................................ [ 93%]
+....................                                                     [100%]
 =============================== tests coverage ================================
 ______________ coverage: platform win32, python 3.12.10-final-0 _______________
 
+Name                                                       Stmts   Miss  Cover   Missing
+----------------------------------------------------------------------------------------
+api\__init__.py                                                0      0   100%
+api\accounting.py                                             15      0   100%
+api\errors.py                                                 23      1    96%   19
+api\serializers.py                                            24      0   100%
+api\service.py                                               118      3    97%   128-130
+api\throttles.py                                              19      0   100%
+api\views.py                                                  42      1    98%   25
+optimizer\__init__.py                                          0      0   100%
+optimizer\baseline.py                                         23      0   100%
+optimizer\engine.py                                           50      0   100%
+optimizer\schemas.py                                          48      0   100%
+routing\__init__.py                                            0      0   100%
+routing\cache.py                                              21      2    90%   36-37
+routing\geocoding.py                                          67      8    88%   41, 56, 83, 101, 117, 140, 154, 168
+routing\geometry.py                                            8      0   100%
+routing\provider.py                                          123      5    96%   55-56, 210, 217, 229
+routing\sqlite_cache.py                                       20      2    90%   32-33
+stations\__init__.py                                           0      0   100%
+stations\enrichment.py                                        65      9    86%   22, 39, 49, 60, 70, 75, 83, 90, 93
+stations\importer.py                                         123      9    93%   44, 69-72, 116, 119, 127, 159
+stations\locate.py                                            62      2    97%   50, 72
+stations\management\__init__.py                                0      0   100%
+stations\management\commands\__init__.py                       0      0   100%
+stations\management\commands\import_fuel.py                   15      2    87%   27-28
+stations\management\commands\import_locations.py              19      3    84%   26, 33-34
+stations\management\commands\seed_demo.py                     28      0   100%
+stations\migrations\0001_initial.py                            7      0   100%
+stations\migrations\0002_dataset_price_basis_and_more.py       4      0   100%
+stations\migrations\__init__.py                                0      0   100%
+stations\models.py                                            47      0   100%
+stations\normalization.py                                     13      0   100%
+----------------------------------------------------------------------------------------
+TOTAL                                                        984     47    95%
 Coverage JSON written to file artifacts/public/final-coverage.json
-=========================== short test summary info ===========================
-SKIPPED [1] tests\test_live.py:12: Set RUN_LIVE_TESTS=1 and ORS_API_KEY to make exactly one live request
-================= 306 passed, 1 skipped in 228.23s (0:03:48) ==================
+308 passed in 99.17s (0:01:39)

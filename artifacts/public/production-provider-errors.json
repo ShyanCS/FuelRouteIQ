@@ -1,0 +1,117 @@
+{
+  "scope": "Actual network adapter probes, not mocked provider responses. The timeout intentionally changes the deadline to 1 ms; configured production timeout is 20 seconds, connect 5 seconds. Vendor 429/5xx/malformed responses are not forced.",
+  "rows": [
+    {
+      "case": "real-invalid-credential",
+      "status": 503,
+      "error": "PROVIDER_AUTH_ERROR",
+      "meta": {
+        "endpoint_resolution_duration_ms": 12.725,
+        "projection_duration_ms": 0,
+        "optimizer_duration_ms": 0,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -81.679435,
+              41.478462
+            ],
+            "label": "Cleveland city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -82.98518,
+              39.987367
+            ],
+            "label": "Columbus city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 1564.294,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 1604.339
+      }
+    },
+    {
+      "case": "valid-key-after-auth-failure-not-cached",
+      "status": 200,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "approximate_city": 5983,
+          "unresolved": 612,
+          "verified_station": 31
+        },
+        "candidate_count": 0,
+        "candidate_location_quality": {},
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "300324bc-a231-4c6c-b783-44c694324f12",
+        "price_basis": "assessment_snapshot",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 4.254,
+        "projection_duration_ms": 132.731,
+        "optimizer_duration_ms": 0.065,
+        "baseline_duration_ms": 0.053,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -81.679435,
+              41.478462
+            ],
+            "label": "Cleveland city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -82.98518,
+              39.987367
+            ],
+            "label": "Columbus city, OH",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "routing_duration_ms": 1910.15,
+        "optimization_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 1846.048,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 2088.84
+      }
+    },
+    {
+      "case": "real-HTTPS-attempt-with-deliberately-1ms-transport-deadline",
+      "status": 503,
+      "error": "PROVIDER_TIMEOUT",
+      "directions_attempts": 1,
+      "duration_ms": 594.8276999988593
+    }
+  ]
+}

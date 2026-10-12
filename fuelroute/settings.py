@@ -72,7 +72,9 @@ if not DEBUG and not os.getenv("DATABASE_URL"):
 # Shared persistent cache for the local multi-threaded demo; createcachetable installs it.
 CACHES = {
     "default": {
-        "BACKEND": "django.core.cache.backends.db.DatabaseCache",
+        "BACKEND": "routing.sqlite_cache.SQLiteDatabaseCache"
+        if DATABASES["default"]["ENGINE"] == "django.db.backends.sqlite3"
+        else "django.core.cache.backends.db.DatabaseCache",
         "LOCATION": "fuelroute_cache",
         "TIMEOUT": 86400,
         "OPTIONS": {"MAX_ENTRIES": 5000},
@@ -98,7 +100,11 @@ REST_FRAMEWORK = {
     "DEFAULT_PARSER_CLASSES": ["rest_framework.parsers.JSONParser"],
     "EXCEPTION_HANDLER": "api.errors.exception_handler",
     "NUM_PROXIES": 1 if not DEBUG else 0,
-    "DEFAULT_THROTTLE_RATES": {"route_client": "30/minute", "route_global": "500/day"},
+    "DEFAULT_THROTTLE_RATES": {
+        "route_client": "30/minute",
+        "route_global_minute": "30/minute",
+        "route_global": "500/day",
+    },
 }
 PUBLIC_API_THROTTLING = not DEBUG
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https") if not DEBUG else None

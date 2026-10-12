@@ -3,11 +3,12 @@
 const $ = (id) => document.getElementById(id);
 const money = (value) => value == null ? "Unavailable" : `$${Number(value).toFixed(2)}`;
 const number = (value, digits = 1) => Number(value).toLocaleString("en-US", {maximumFractionDigits: digits});
+const priceLabel = (basis) => basis === "illustrative_test_fixture" ? "illustrative prices" : basis === "assessment_snapshot" ? "assessment prices" : "prices unavailable";
 const map = L.map("map", {scrollWheelZoom: false}).setView([38.2, -93.2], 4);
 map.attributionControl.addAttribution('<a href="https://www.naturalearthdata.com/">Natural Earth</a> · road geometry © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors');
 fetch("/static/demo/us-states.geojson").then(r => r.json()).then(data => {
   L.geoJSON(data, {style: {color:"#c3cfc3",weight:1,fillColor:"#f1f4ee",fillOpacity:0.95},onEachFeature:(feature,layer) => {
-    layer.bindTooltip(feature.properties.postal || feature.properties.name, {permanent:true,direction:"center",className:"state-label",interactive:false});
+    layer.bindTooltip(textElement("span", "", feature.properties.postal || feature.properties.name), {permanent:true,direction:"center",className:"state-label",interactive:false});
   }}).addTo(map).bringToBack();
 }).catch(() => $("tile-status").textContent="State basemap unavailable; route geometry still shown");
 let streetLayer = null;
@@ -27,10 +28,12 @@ function textElement(tag, className, text) {
 }
 function drawRoute(route, labels = null) {
   if (!route?.geometry?.coordinates?.length) return;
+  map.attributionControl.removeAttribution('© <a href="https://openrouteservice.org/">openrouteservice by HeiGIT</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>');
+  if (route.provider === "ors") map.attributionControl.addAttribution('© <a href="https://openrouteservice.org/">openrouteservice by HeiGIT</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>');
   L.geoJSON(route.geometry, {style: {color: "#177d68", weight: 4, opacity: 0.9}}).addTo(layers);
   const points = route.geometry.coordinates;
   for (const [point,label] of [[points[0],labels?.start || $("start").value],[points[points.length-1],labels?.finish || $("finish").value]]) {
-    L.circleMarker([point[1],point[0]], {radius:5,color:"#172b36",weight:2,fillColor:"white",fillOpacity:1}).bindTooltip(label,{permanent:true,direction:"right",className:"endpoint-label"}).addTo(layers);
+    L.circleMarker([point[1],point[0]], {radius:5,color:"#172b36",weight:2,fillColor:"white",fillOpacity:1}).bindTooltip(textElement("span", "", label),{permanent:true,direction:"right",className:"endpoint-label"}).addTo(layers);
   }
   map.fitBounds(layers.getBounds(), {padding: [35, 35], maxZoom: 12});
 }
@@ -63,13 +66,15 @@ function render(result, submitted) {
   $("consumed").textContent = `${number(fuel.gallons_consumed)} gal`;
   $("purchased").textContent = `${number(fuel.gallons_purchased)} gal purchased during journey`;
   $("end-fuel").textContent = `${number(fuel.end_fuel_gallons)} gal at destination`;
-  $("status").textContent = `${route.recorded ? "Recorded road geometry" : "Live route"} · ${meta.location_mode === "estimated" ? "Conditional city estimate" : "Verified station points; zero-detour model"} · ${number(route.duration_seconds/3600)} hours driving`;
+  const routeLabel = route.provider === "identical_endpoints" ? "Same location; no directions needed" : route.recorded ? "Recorded road geometry" : "Live ORS road route";
+  $("provider-badge").textContent = `${routeLabel} · ${priceLabel(meta.price_basis)}`;
+  $("status").textContent = `${routeLabel} · ${meta.location_mode === "estimated" ? "Conditional city estimate" : "Verified station points; zero-detour model"} · ${number(route.duration_seconds/3600)} hours driving`;
   $("initial-volume").textContent = `${number(result.vehicle.initial_fuel_gallons)} gal`;
   $("initial-worth").textContent = fuel.initial_fuel_value_usd == null ? "Unknown" : money(fuel.initial_fuel_value_usd);
   $("economic-cost").textContent = fuel.economic_fuel_cost_usd == null ? "Unavailable · initial value unknown" : money(fuel.economic_fuel_cost_usd);
   const illustrative = meta.price_basis === "illustrative_test_fixture";
   $("quality-banner").className = `quality-banner${illustrative ? " illustrative" : meta.location_mode === "estimated" ? " estimated" : ""}`;
-  $("quality-banner").textContent = `${illustrative ? "ILLUSTRATIVE TEST PRICES · " : "Assessment price snapshots · "}${meta.location_mode === "estimated" ? "ESTIMATED CITY POSITIONS: highway access, detours and savings are conditional. " : "Reviewed station sites; access and detours unmeasured. "}This minimizes cash purchases only for the fixed route and eligible candidates.`;
+  $("quality-banner").textContent = `${illustrative ? "ILLUSTRATIVE TEST PRICES · " : meta.price_basis === "assessment_snapshot" ? "Assessment price snapshots · " : "Price dataset unavailable · "}${meta.location_mode === "estimated" ? "ESTIMATED CITY POSITIONS: highway access, detours and savings are conditional. " : "Reviewed station sites; access and detours unmeasured. "}This minimizes cash purchases only for the fixed route and eligible candidates.`;
   layers.clearLayers(); drawRoute(route, submitted);
   $("stops").replaceChildren(); $("stop-count").textContent = result.fuel_stops.length;
   if (!result.fuel_stops.length) $("stops").appendChild(textElement("li","placeholder","Starting fuel covers the trip. Fuel is still consumed; its initial monetary value is unknown unless supplied."));
@@ -144,5 +149,5 @@ $("mode").addEventListener("change",() => {
 });
 $("retry-estimated").addEventListener("click",() => {$("mode").value="estimated";$("mode").dispatchEvent(new Event("change"));$("planner").requestSubmit();});
 document.querySelectorAll(".example").forEach(button => button.addEventListener("click",() => {$("start").value=button.dataset.start;$("finish").value=button.dataset.city;$("planner").requestSubmit();}));
-fetch("/api/v1/health/").then(r=>r.json()).then(data=>{$("provider-badge").textContent=data.routing_provider === "recorded" ? `${data.recorded_route_count} recorded roads · ${data.price_basis === "illustrative_test_fixture" ? "illustrative prices" : "assessment prices"}` : data.live_routing_configured ? "HeiGIT routing configured · key not verified here" : "HeiGIT key needed for live routing";}).catch(()=>$("provider-badge").textContent="API unavailable");
+fetch("/api/v1/health/").then(r=>r.json()).then(data=>{const prices = priceLabel(data.price_basis); $("provider-badge").textContent=data.routing_provider === "recorded" ? `${data.recorded_route_count} recorded roads · ${prices}` : `${data.live_routing_configured ? "HeiGIT configured" : "HeiGIT key needed"} · ${prices}`;}).catch(()=>$("provider-badge").textContent="API unavailable");
 window.fuelRouteState=()=>latestResult;

@@ -8,7 +8,7 @@ from rest_framework.test import APIClient
 
 from routing.geocoding import resolve_location
 from routing.provider import CallCounts
-from stations.models import Station
+from stations.models import Dataset, Station
 
 pytestmark = pytest.mark.django_db
 URL = "/api/v1/routes/optimize/"
@@ -24,6 +24,8 @@ def test_live_adapter_cache_and_vehicle_changes(prepared_db, mock_directions):
     assert first.status_code == 200, first.data
     assert first.data["meta"]["directions_api_calls"] == 1
     assert first.data["meta"]["geocoding_api_calls"] == 0
+    assert first.data["route"]["license"] == "CC-BY-SA-4.0"
+    assert "HeiGIT" in first.data["route"]["attribution"]
     assert not first.data["meta"]["route_cache_hit"]
     assert len(first.data["fuel_stops"]) >= 2
     assert all(s["location_precision"] == "verified_station" for s in first.data["fuel_stops"])
@@ -71,6 +73,12 @@ def test_recorded_real_geometry_long_short_and_timeline(prepared_db, settings):
     assert short.data["fuel_summary"]["gallons_consumed"] > 0
     assert short.data["fuel_summary"]["initial_fuel_value_usd"] is None
     assert short.data["fuel_summary"]["total_acquired_fuel_value_usd"] is None
+    Dataset.objects.all().delete()
+    no_prices = post({"start": "Chicago, IL", "finish": "Milwaukee, WI"})
+    assert no_prices.status_code == 200
+    assert no_prices.data["meta"]["price_basis"] == "unavailable"
+    assert no_prices.data["fuel_summary"]["total_refueling_spend_usd"] == "0.00"
+    assert "No fuel-price dataset" in no_prices.data["warnings"][0]
 
 
 def test_strict_coverage_gap_estimated_mode(prepared_db, mock_directions):

@@ -1,0 +1,68 @@
+{
+  "scope": "Actual external HTTPS Newman/Postman requests against live Render ORS application",
+  "base_url": "https://fuelroute-iq.onrender.com",
+  "stats": {
+    "iterations": {
+      "total": 1,
+      "pending": 0,
+      "failed": 0
+    },
+    "items": {
+      "total": 11,
+      "pending": 0,
+      "failed": 0
+    },
+    "scripts": {
+      "total": 11,
+      "pending": 0,
+      "failed": 0
+    },
+    "prerequests": {
+      "total": 11,
+      "pending": 0,
+      "failed": 0
+    },
+    "requests": {
+      "total": 11,
+      "pending": 0,
+      "failed": 0
+    },
+    "tests": {
+      "total": 11,
+      "pending": 0,
+      "failed": 0
+    },
+    "assertions": {
+      "total": 74,
+      "pending": 0,
+      "failed": 0
+    },
+    "testScripts": {
+      "total": 11,
+      "pending": 0,
+      "failed": 0
+    },
+    "prerequestScripts": {
+      "total": 0,
+      "pending": 0,
+      "failed": 0
+    }
+  },
+  "timings": {
+    "responseAverage": 885.2727272727273,
+    "responseMin": 275,
+    "responseMax": 1858,
+    "responseSd": 527.8617399745178,
+    "dnsAverage": 0,
+    "dnsMin": 0,
+    "dnsMax": 0,
+    "dnsSd": 0,
+    "firstByteAverage": 0,
+    "firstByteMin": 0,
+    "firstByteMax": 0,
+    "firstByteSd": 0,
+    "started": 1791823771230,
+    "completed": 1791823782103
+  },
+  "failures": []
+}

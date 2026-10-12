@@ -1,15 +1,15 @@
 # Submission links
 
-- GitHub: https://github.com/ShyanCS/FuelRouteIQ (published and independently cloned).
-- Public application: **pending required Render workspace confirmation**.
-- Public API: **pending public host**, path `/api/v1/routes/optimize/` (POST JSON).
-- Health: **pending public host**, path `/api/v1/health/`.
-- Postman: `postman/FuelRouteIQ.postman_collection.json`; set `base_url` to the verified host.
-- Loom: **not recorded**. Use `docs/FINAL_LOOM_SCRIPT.md`, `docs/LOOM_SHOT_LIST.md` and `docs/DEMO_REQUESTS.md`.
-- Review archive: `FINAL_REVIEW_PACKAGE.zip` (generated after final checks).
+- **GitHub source:** https://github.com/ShyanCS/FuelRouteIQ
+- **Public application:** https://fuelroute-iq.onrender.com/
+- **API:** https://fuelroute-iq.onrender.com/api/v1/routes/optimize/ â€” POST JSON
+- **Health:** https://fuelroute-iq.onrender.com/api/v1/health/
+- **Postman collection:** `postman/FuelRouteIQ.postman_collection.json`
+- **Hosted Postman environment:** `postman/FuelRouteIQ.hosted.postman_environment.json`
+- **Loom:** not recorded; no share link exists. Script and shots are in `docs/`.
+- **Safe review archive:** `FINAL_REVIEW_PACKAGE.zip`, generated with `python -m scripts.build_review_package`.
+- **Current verification:** `FINAL_SUBMISSION_AUDIT.md`, `artifacts/public/production-final-verification.json`.
 
-Employer-facing description: FuelRoute IQ is a Django API and interactive map that minimizes fuel purchases along a selected US road route using audited price inputs, precise fuel accounting, independent optimization checks and cached routing. It explains purchases and baseline savings while visibly qualifying station-location uncertainty. The public demonstration uses illustrative prices; the supplied assessment CSV is supported privately. Fixed-route, zero-detour and coverage limitations are disclosed.
+Employer-facing description: FuelRoute IQ is a Django API and interactive map that calculates cost-effective fuel purchases along a real US road route with a 500-mile range and 10 MPG. It explains quantities and baseline savings, audits imported assessment prices, qualifies station-location uncertainty and minimizes directions requests through independent caching. The live public demo uses expressly illustrative prices; the supplied assessment CSV is supported privately. Fixed-route, zero-detour and geographic coverage limitations are disclosed.
 
-Validated CI: https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38231909027 (code commit 12d948933d78ebf0c02a7b0880a1408e382b5ee3; later endpoint correction has separate final CI evidence).
-
-Final endpoint-corrected publication/CI is verified on code commit **e7905f473fe6011f11e9b14cb8b0132e18cd7eb4**. [Successful Ubuntu run](https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38234341812): **305 passed, 2 explicit skips in 27.46 s**, plus **74/74 Newman assertions across 11 real loopback HTTP requests**, production static/security/migration, dependency, lint/format and type checks. Skips: private assessment CSV and genuine ORS key. The independent public clone fast-forwarded to that commit and confirmed the corrected Seattle road/provenance/snap distances and honest 422 coverage gap. Later documentation-only commits preserve this code evidence. Public HTTPS, hosted Postman/browser/restart tests and successful authenticated ORS remain UNVERIFIED; Loom is unrecorded.
+The public website, API and repository are verified. Recording the under-five-minute Loom and sending the employer submission remain user actions. Assessment receipt time was not supplied, so the three-day deadline is unverified.

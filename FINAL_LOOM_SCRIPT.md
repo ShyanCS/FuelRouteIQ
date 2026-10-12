@@ -1,39 +1,55 @@
-# Final spoken walkthrough — target 4:30
+# Final Loom script — target 4 minutes 30 seconds
 
-## 0:00–0:25 — introduction
+Stage directions in brackets are not spoken. Read current API numbers before recording. Approximately 500 spoken words; leave time for interactions and natural pauses.
 
-“This is FuelRoute IQ, my Django backend assessment. It accepts US starting and finishing locations, returns a road route, and calculates where and how much fuel to buy. The assessment defaults are a 500-mile range and 10 miles per gallon, which gives a 50-gallon tank.”
+## 0:00–0:20
 
-## 0:25–1:15 — hosted application
+“This is FuelRoute IQ, my Django backend assessment. It takes US start and finish locations, returns a real road route, and calculates where and how much fuel to buy. The default 500-mile range and ten miles per gallon give a fifty-gallon tank.”
 
-“Here is the hosted Django application. I’m running Chicago to Dallas. The map, station markers, costs and fuel timeline all come from the API response. Green pins are individually reviewed operator station sites. The public demo uses clearly labelled illustrative prices; the original employer CSV is supported through the audited import command and is kept private.
+## 0:20–1:05
 
-The provider badge tells us whether this request uses live ORS or a recorded OSRM road. [Read the badge and describe the actual mode.] Recorded roads are real road geometries, but replay makes no external directions call. There is no automatic fallback that disguises a provider failure.”
+[Run Chicago–Dallas and click a stop marker.]
 
-## 1:15–2:10 — Postman and accounting
+“Here is the public HTTPS application using authenticated OpenRouteService. Everything on the map and fuel timeline comes from the Django API. This journey is about 965 miles, with two reviewed station sites. The current public dataset gives $139.44 in purchases and $7.57 savings against the independently simulated baseline.
 
-“In Postman I’m sending the same JSON to the hosted optimization endpoint. The response contains the route geometry, mileage, vehicle assumptions, selected stations, their source and prices, exact purchase quantities and fuel before and after each purchase.
+The prices are prominently labelled illustrative. The original employer CSV is supported and tested through the audited importer, but stays private because its redistribution rights are unspecified. These are reviewed site coordinates, not a claim that highway access or detours have been routed.”
 
-The total here is [read total_refueling_spend_usd] in cash purchases, with [read gallons_consumed] gallons consumed and [read gallons_purchased] purchased. The vehicle starts with 50 gallons already owned. For the short Milwaukee route, purchases can be zero while consumption is positive. If the starting fuel’s value is unknown, its economic consumption cost remains unavailable. Savings compare a separately simulated price-blind baseline with the same starting fuel and candidates.”
+## 1:05–1:55
 
-## 2:10–2:40 — caching
+[Send the long strict request in Postman; expand stop and fuel-summary JSON.]
 
-“I repeat the long request. The metadata shows a route cache hit and zero new directions calls. Changing initial fuel or station mode keeps the same geometry cache; prices and vehicle assumptions belong in the separate optimization cache. Endpoint geocoding is counted separately. Common city and state inputs resolve from the local Census index.”
+“This is the actual hosted API. It returns the road geometry, distance and duration, vehicle assumptions, station sources, prices, quantities, and fuel before and after each purchase. It consumes about 96.48 gallons and buys 46.48, starting with fifty gallons already owned. The remaining fuel is zero, which the model explicitly allows. Exact unrounded costs are included; displayed dollars are rounded only at the reporting boundary.
 
-## 2:40–3:30 — architecture and algorithm
+The baseline uses the same starting fuel and candidates, so its $147.01 purchases give a comparable savings figure. This is a snapshot and model comparison, not a guaranteed pump-price discount.”
 
-“The request flows through validation, endpoint resolution, the routing adapter, candidate projection and the optimizer. These are separate modules with deterministic offline tests. The routing adapter has bounded timeouts and structured authentication, quota and malformed-response errors.
+## 1:55–2:20
 
-The greedy optimizer buys only enough to reach the next cheaper reachable station; otherwise it fills the tank, capped by destination need. Decimal arithmetic keeps fuel and money consistent. An independent dynamic-programming oracle checks its answers. The proof applies to a fixed route and eligible stations with divisible purchases and zero modeled detours; it does not claim a global minimum driving cost.”
+[Repeat and then set initial fuel to 45.]
 
-## 3:30–4:15 — evidence and honest limits
+“The repeat reports a route cache hit and zero new directions calls. Changing fuel keeps that geometry and recalculates purchases. The captured cold request made one directions call. Geocoding is counted separately; city and state endpoints resolve from the local index.”
 
-“The final audit records the actual test, coverage, CI and hosted Postman results. [Show and read the current verified results, including skips.] Station prices are not live pump prices. A reviewed site coordinate is not proof of an entrance, opening hours or a routed detour. Estimated mode prominently qualifies city positions. Coverage gaps return the real route with an explanation, rather than invented stops. Seattle to San Francisco is one such limitation with the current priced dataset.
+## 2:20–2:45
 
-[If authenticated ORS remains unverified: ‘Successful authenticated ORS validation still needs a genuine configured key; the hosted replay demo and mocked adapter tests do not prove it.’]”
+[Send the short known-value request.]
 
-## 4:15–4:30 — close
+“Milwaukee consumes about 9.80 gallons but buys no fuel with a full tank. Zero cash spending does not mean free consumption. Supplying a two-hundred-dollar initial inventory value enables FIFO economic consumption and remaining-asset accounting; without that value those estimates remain unavailable.”
 
-“The repository includes migrations, reproducible setup, data provenance, production configuration and this Postman collection. The README and final audit explain what is verified and what remains limited. Thank you.”
+## 2:45–3:35
 
-Bracketed instructions are stage directions, not words to read. Do not insert a live-provider, CI, deployment or test claim unless the current audit supports it. Record and inspect the actual video before adding a Loom link.
+[Show the service, provider, optimizer and oracle files.]
+
+“Django validation, routing, station projection and optimization are separate modules. The provider has bounded timeouts, structured failures and no concealed replay fallback. The greedy algorithm buys enough to reach a cheaper reachable opportunity; otherwise it fills, capped by destination need. Decimal arithmetic maintains the fuel ledger.
+
+An independent dynamic-programming oracle checks cost and infeasibility. The optimum is for a fixed route, eligible stations, divisible purchases and zero modelled detours. It does not optimize every possible road or promise operational access.”
+
+## 3:35–4:10
+
+[Show the final audit and current counts; inspect estimated warning or Seattle gap.]
+
+“The audit separates deterministic, recorded, genuinely live and deployed evidence. [Read the current local test and hosted Postman counts.] CI also checks reproducible setup. Estimated mode visibly qualifies city positions. National strict coverage remains limited: Seattle to San Francisco returns its actual road with a priced-station gap, without inventing a stop. The public limiter protects provider quota.”
+
+## 4:10–4:30
+
+“The repository includes migrations, a pinned setup, provenance, free deployment configuration, the Postman collection and verification artifacts. The README links to the live app and explains the assumptions. Thank you.”
+
+No Loom recording or URL exists until the human recording is completed and inspected.

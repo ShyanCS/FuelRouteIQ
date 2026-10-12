@@ -1,0 +1,46 @@
+{
+  "earlier_sandboxed_run": {
+    "passed": 307,
+    "failed": 1,
+    "failure": "Opt-in live ORS DNS getaddrinfo failed under restricted network; rerun with authorized network access. Not counted as a live success."
+  },
+  "later_network_enabled_run": {
+    "passed": 307,
+    "failed": 1,
+    "failure": "SQLite cache table read/write contention in existing four-request concurrency test; genuine ORS opt-in passed. Fixed by local synchronized SQL backend, not by weakening assertions."
+  },
+  "final_local_suite": {
+    "passed": 308,
+    "skipped": 0,
+    "failed": 0,
+    "seconds": 99.17,
+    "scope": "Full suite with original private source audit and genuine one-call live ORS integration enabled",
+    "statements_covered": 937,
+    "statements_total": 984,
+    "statement_coverage_percent": 95.22357723577235
+  },
+  "checks": {
+    "django_system": "passed",
+    "migration_drift": "passed",
+    "ruff_lint": "passed",
+    "ruff_format": "passed, 79 Python files",
+    "mypy": "passed, 4 optimizer files",
+    "pip_check": "passed",
+    "deploy_security": "passed, zero issues",
+    "dependency_audit": "36 packages, zero known vulnerabilities, no skips"
+  },
+  "live_ors": "passed",
+  "public_health_check_path": "/api/v1/health/",
+  "public_url": "https://fuelroute-iq.onrender.com",
+  "loom": "unrecorded, human microphone/account required",
+  "last_published_ci": {
+    "commit": "3ef91c130887be0fa731fb1b34c7307b12cecdf3",
+    "run": "https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38234986464",
+    "conclusion": "success",
+    "passed": 305,
+    "skipped": 2,
+    "newman_assertions": 74
+  },
+  "final_code_ci": "pending new publication",
+  "final_hosted_browser": "pending new JS redeploy"
+}

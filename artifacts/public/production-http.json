@@ -1,0 +1,1231 @@
+{
+  "base_url": "https://fuelroute-iq.onrender.com",
+  "scope": "Actual external HTTPS against Render, live ORS, public illustrative prices",
+  "homepage_status": 200,
+  "assets": [
+    {
+      "path": "/static/demo/vendor/leaflet.bf5f6064937c.css",
+      "status": 200,
+      "bytes": 14190
+    },
+    {
+      "path": "/static/demo/app.a3704afb6533.css",
+      "status": 200,
+      "bytes": 8469
+    },
+    {
+      "path": "/static/demo/vendor/leaflet.4c58d6abc2ba.js",
+      "status": 200,
+      "bytes": 147517
+    },
+    {
+      "path": "/static/demo/app.64cad326f9b5.js",
+      "status": 200,
+      "bytes": 13994
+    }
+  ],
+  "health": {
+    "status": "ok",
+    "django_version": "6.1.2",
+    "routing_provider": "ors",
+    "live_routing_configured": true,
+    "fuel_dataset_loaded": true,
+    "local_places": 32071,
+    "price_basis": "illustrative_test_fixture",
+    "recorded_route_count": 5
+  },
+  "security_headers": {
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "referrer-policy": "same-origin"
+  },
+  "rows": [
+    {
+      "name": "long",
+      "request": {
+        "start": "Chicago, IL",
+        "finish": "Dallas, TX"
+      },
+      "http_status": 200,
+      "wall_ms": 544.374,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 964.7988869999205,
+        "gallons_consumed": 96.47988869999205,
+        "gallons_purchased": 46.479888699992046,
+        "total_refueling_spend_usd": "139.44",
+        "total_refueling_spend_unrounded_usd": "139.4396660999761393462180864",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 0.0,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "147.01",
+        "savings_usd": "7.57",
+        "savings_percent": 5.14756403315945
+      },
+      "stops": 2,
+      "station_ids": [
+        "7466",
+        "64679"
+      ],
+      "location_quality": [
+        "verified_station",
+        "verified_station"
+      ],
+      "road_miles": 964.7988869999205,
+      "road_points": 5351,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 6,
+        "candidate_location_quality": {
+          "verified_station": 6
+        },
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 3
+        },
+        "endpoint_resolution_duration_ms": 6.125,
+        "projection_duration_ms": 0,
+        "optimizer_duration_ms": 0,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -87.684939,
+              41.837045
+            ],
+            "label": "Chicago city, IL",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -96.766513,
+              32.793333
+            ],
+            "label": "Dallas city, TX",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": true,
+        "routing_duration_ms": 37.047,
+        "optimization_cache_hit": true,
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 102.038
+      },
+      "error_code": null
+    },
+    {
+      "name": "long-repeat",
+      "request": {
+        "start": "Chicago, IL",
+        "finish": "Dallas, TX"
+      },
+      "http_status": 200,
+      "wall_ms": 586.008,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 964.7988869999205,
+        "gallons_consumed": 96.47988869999205,
+        "gallons_purchased": 46.479888699992046,
+        "total_refueling_spend_usd": "139.44",
+        "total_refueling_spend_unrounded_usd": "139.4396660999761393462180864",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 0.0,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "147.01",
+        "savings_usd": "7.57",
+        "savings_percent": 5.14756403315945
+      },
+      "stops": 2,
+      "station_ids": [
+        "7466",
+        "64679"
+      ],
+      "location_quality": [
+        "verified_station",
+        "verified_station"
+      ],
+      "road_miles": 964.7988869999205,
+      "road_points": 5351,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 6,
+        "candidate_location_quality": {
+          "verified_station": 6
+        },
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 3
+        },
+        "endpoint_resolution_duration_ms": 6.07,
+        "projection_duration_ms": 0,
+        "optimizer_duration_ms": 0,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -87.684939,
+              41.837045
+            ],
+            "label": "Chicago city, IL",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -96.766513,
+              32.793333
+            ],
+            "label": "Dallas city, TX",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": true,
+        "routing_duration_ms": 32.676,
+        "optimization_cache_hit": true,
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 89.148
+      },
+      "error_code": null
+    },
+    {
+      "name": "changed-fuel",
+      "request": {
+        "start": "Chicago, IL",
+        "finish": "Dallas, TX",
+        "initial_fuel_gallons": 45
+      },
+      "http_status": 200,
+      "wall_ms": 912.908,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 964.7988869999205,
+        "gallons_consumed": 96.47988869999205,
+        "gallons_purchased": 51.479888699992046,
+        "total_refueling_spend_usd": "154.44",
+        "total_refueling_spend_unrounded_usd": "154.4396660999761393462180864",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 0.0,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "163.01",
+        "savings_usd": "8.57",
+        "savings_percent": 5.255773997641352
+      },
+      "stops": 2,
+      "station_ids": [
+        "7466",
+        "64679"
+      ],
+      "location_quality": [
+        "verified_station",
+        "verified_station"
+      ],
+      "road_miles": 964.7988869999205,
+      "road_points": 5351,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 6,
+        "candidate_location_quality": {
+          "verified_station": 6
+        },
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 3
+        },
+        "endpoint_resolution_duration_ms": 7.499,
+        "projection_duration_ms": 350.931,
+        "optimizer_duration_ms": 0.061,
+        "baseline_duration_ms": 0.074,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -87.684939,
+              41.837045
+            ],
+            "label": "Chicago city, IL",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -96.766513,
+              32.793333
+            ],
+            "label": "Dallas city, TX",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": true,
+        "routing_duration_ms": 45.323,
+        "optimization_cache_hit": false,
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 508.613
+      },
+      "error_code": null
+    },
+    {
+      "name": "estimated",
+      "request": {
+        "start": "Chicago, IL",
+        "finish": "Dallas, TX",
+        "location_mode": "estimated"
+      },
+      "http_status": 200,
+      "wall_ms": 1471.508,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 964.7988869999205,
+        "gallons_consumed": 96.47988869999205,
+        "gallons_purchased": 46.479888699992046,
+        "total_refueling_spend_usd": "139.44",
+        "total_refueling_spend_unrounded_usd": "139.4396660999761393462180864",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 0.0,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "147.01",
+        "savings_usd": "7.57",
+        "savings_percent": 5.14756403315945
+      },
+      "stops": 2,
+      "station_ids": [
+        "7466",
+        "64679"
+      ],
+      "location_quality": [
+        "verified_station",
+        "verified_station"
+      ],
+      "road_miles": 964.7988869999205,
+      "road_points": 5351,
+      "meta": {
+        "location_mode": "estimated",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 6,
+        "candidate_location_quality": {
+          "verified_station": 6
+        },
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "conditional_estimate_city_positions_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 3
+        },
+        "endpoint_resolution_duration_ms": 6.411,
+        "projection_duration_ms": 943.232,
+        "optimizer_duration_ms": 0.077,
+        "baseline_duration_ms": 0.104,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -87.684939,
+              41.837045
+            ],
+            "label": "Chicago city, IL",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -96.766513,
+              32.793333
+            ],
+            "label": "Dallas city, TX",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": true,
+        "routing_duration_ms": 38.274,
+        "optimization_cache_hit": false,
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 1095.8
+      },
+      "error_code": null
+    },
+    {
+      "name": "short",
+      "request": {
+        "start": "Chicago, IL",
+        "finish": "Milwaukee, WI",
+        "initial_fuel_cost_usd": "200.00"
+      },
+      "http_status": 200,
+      "wall_ms": 1051.438,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": "39.20",
+        "remaining_fuel_value_usd": "160.80",
+        "economic_cost_status": "known_fifo_inventory_valuation",
+        "valuation_method": "FIFO using supplied initial inventory value and selected observed purchase prices",
+        "route_miles": 98.00570915851428,
+        "gallons_consumed": 9.800570915851427,
+        "gallons_purchased": 0.0,
+        "total_refueling_spend_usd": "0.00",
+        "total_refueling_spend_unrounded_usd": "0",
+        "initial_fuel_value_usd": "200.00",
+        "total_acquired_fuel_value_usd": "200.00",
+        "end_fuel_gallons": 40.19942908414857,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "0.00",
+        "savings_usd": "0.00",
+        "savings_percent": null
+      },
+      "stops": 0,
+      "station_ids": [],
+      "location_quality": [],
+      "road_miles": 98.00570915851428,
+      "road_points": 1140,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 0,
+        "candidate_location_quality": {},
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 8.881,
+        "projection_duration_ms": 98.4,
+        "optimizer_duration_ms": 0.026,
+        "baseline_duration_ms": 0.017,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -87.684939,
+              41.837045
+            ],
+            "label": "Chicago city, IL",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -87.966695,
+              43.063348
+            ],
+            "label": "Milwaukee city, WI",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "routing_duration_ms": 601.734,
+        "optimization_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 469.112,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 743.8
+      },
+      "error_code": null
+    },
+    {
+      "name": "new-york-miami",
+      "request": {
+        "start": "New York, NY",
+        "finish": "Miami, FL"
+      },
+      "http_status": 200,
+      "wall_ms": 2178.481,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 1291.2340059055118,
+        "gallons_consumed": 129.12340059055117,
+        "gallons_purchased": 79.12340059055119,
+        "total_refueling_spend_usd": "238.91",
+        "total_refueling_spend_unrounded_usd": "238.9107234254796936173228346",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 0.0,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "253.56",
+        "savings_usd": "14.65",
+        "savings_percent": 5.777111555518627
+      },
+      "stops": 4,
+      "station_ids": [
+        "5236",
+        "52441",
+        "68302",
+        "52641"
+      ],
+      "location_quality": [
+        "verified_station",
+        "verified_station",
+        "verified_station",
+        "verified_station"
+      ],
+      "road_miles": 1291.2340059055118,
+      "road_points": 8745,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 11,
+        "candidate_location_quality": {
+          "verified_station": 11
+        },
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 9.504,
+        "projection_duration_ms": 601.834,
+        "optimizer_duration_ms": 0.127,
+        "baseline_duration_ms": 0.138,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -73.938677,
+              40.662712
+            ],
+            "label": "New York city, NY",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -80.208615,
+              25.775163
+            ],
+            "label": "Miami city, FL",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "routing_duration_ms": 994.175,
+        "optimization_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 871.294,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 1767.943
+      },
+      "error_code": null
+    },
+    {
+      "name": "la-denver",
+      "request": {
+        "start": "Los Angeles, CA",
+        "finish": "Denver, CO"
+      },
+      "http_status": 200,
+      "wall_ms": 2307.495,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 1036.8230782231767,
+        "gallons_consumed": 103.68230782231767,
+        "gallons_purchased": 53.68230782231767,
+        "total_refueling_spend_usd": "166.45",
+        "total_refueling_spend_unrounded_usd": "166.4497154528961279957846178",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 0.0,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "178.30",
+        "savings_usd": "11.85",
+        "savings_percent": 6.646903146782007
+      },
+      "stops": 3,
+      "station_ids": [
+        "52463",
+        "66106",
+        "2088"
+      ],
+      "location_quality": [
+        "verified_station",
+        "verified_station",
+        "verified_station"
+      ],
+      "road_miles": 1036.8230782231767,
+      "road_points": 9261,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 8,
+        "candidate_location_quality": {
+          "verified_station": 8
+        },
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 10.749,
+        "projection_duration_ms": 661.907,
+        "optimizer_duration_ms": 0.099,
+        "baseline_duration_ms": 0.093,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -118.410825,
+              34.019394
+            ],
+            "label": "Los Angeles city, CA",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -104.881105,
+              39.76185
+            ],
+            "label": "Denver city, CO",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "routing_duration_ms": 985.739,
+        "optimization_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 774.402,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 1776.151
+      },
+      "error_code": null
+    },
+    {
+      "name": "seattle-sf",
+      "request": {
+        "start": "Seattle, WA",
+        "finish": "San Francisco, CA"
+      },
+      "http_status": 422,
+      "wall_ms": 2261.039,
+      "fuel_summary": null,
+      "stops": null,
+      "station_ids": [],
+      "location_quality": [],
+      "road_miles": 815.6582433587847,
+      "road_points": 7663,
+      "meta": {
+        "endpoint_resolution_duration_ms": 9.199,
+        "projection_duration_ms": 702.727,
+        "optimizer_duration_ms": 0.095,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -122.351538,
+              47.619335
+            ],
+            "label": "Seattle city, WA",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -122.41942,
+              37.77493
+            ],
+            "label": "San Francisco city, CA",
+            "precision": "approximate_city",
+            "source": "https://www.geonames.org/5391959/san-francisco.html",
+            "representative_point_note": "Census's offshore representative point snapped roughly 30 km away onto Point Reyes Lighthouse Road in the previous recording. Use the published populated-place reference for endpoint routing only. This is an approximate city point, not a precise address or station.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "routing_duration_ms": 974.925,
+        "optimization_cache_hit": false,
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 848.352,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 1761.084
+      },
+      "error_code": "UNREACHABLE_FUEL_GAP"
+    },
+    {
+      "name": "unseen-austin-houston",
+      "request": {
+        "start": "Austin, TX",
+        "finish": "Houston, TX"
+      },
+      "http_status": 200,
+      "wall_ms": 1226.064,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 168.8775053686471,
+        "gallons_consumed": 16.88775053686471,
+        "gallons_purchased": 0.0,
+        "total_refueling_spend_usd": "0.00",
+        "total_refueling_spend_unrounded_usd": "0",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 33.11224946313529,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "0.00",
+        "savings_usd": "0.00",
+        "savings_percent": null
+      },
+      "stops": 0,
+      "station_ids": [],
+      "location_quality": [],
+      "road_miles": 168.8775053686471,
+      "road_points": 1634,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 0,
+        "candidate_location_quality": {},
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 9.903,
+        "projection_duration_ms": 137.201,
+        "optimizer_duration_ms": 0.026,
+        "baseline_duration_ms": 0.049,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -97.754134,
+              30.298622
+            ],
+            "label": "Austin city, TX",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -95.388806,
+              29.785743
+            ],
+            "label": "Houston city, TX",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "routing_duration_ms": 633.563,
+        "optimization_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 540.229,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 881.5
+      },
+      "error_code": null
+    },
+    {
+      "name": "foreign",
+      "request": {
+        "start": "Chicago, IL",
+        "finish": "Toronto, ON"
+      },
+      "http_status": 422,
+      "wall_ms": 309.595,
+      "fuel_summary": null,
+      "stops": null,
+      "station_ids": [],
+      "location_quality": [],
+      "road_miles": null,
+      "road_points": 0,
+      "meta": {
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 3.882
+      },
+      "error_code": "LOCATION_OUTSIDE_US"
+    },
+    {
+      "name": "malformed",
+      "request": null,
+      "http_status": 400,
+      "wall_ms": 329.328,
+      "fuel_summary": null,
+      "stops": null,
+      "station_ids": [],
+      "location_quality": [],
+      "road_miles": null,
+      "road_points": 0,
+      "meta": null,
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "name": "precise-address",
+      "request": {
+        "start": "233 S Wacker Dr, Chicago, IL",
+        "finish": "Milwaukee, WI"
+      },
+      "http_status": 200,
+      "wall_ms": 1622.159,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 96.01433876163208,
+        "gallons_consumed": 9.601433876163206,
+        "gallons_purchased": 0.0,
+        "total_refueling_spend_usd": "0.00",
+        "total_refueling_spend_unrounded_usd": "0",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 40.398566123836794,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "0.00",
+        "savings_usd": "0.00",
+        "savings_percent": null
+      },
+      "stops": 0,
+      "station_ids": [],
+      "location_quality": [],
+      "road_miles": 96.01433876163208,
+      "road_points": 981,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 0,
+        "candidate_location_quality": {},
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 495.771,
+        "projection_duration_ms": 71.427,
+        "optimizer_duration_ms": 0.021,
+        "baseline_duration_ms": 0.017,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -87.635868,
+              41.878658
+            ],
+            "label": "233 South Wacker Drive, Central, Chicago, IL, USA",
+            "precision": "provider_address",
+            "source": "https://openrouteservice.org/services/",
+            "cache_hit": false,
+            "local_index": false
+          },
+          "finish": {
+            "coordinates": [
+              -87.966695,
+              43.063348
+            ],
+            "label": "Milwaukee city, WI",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "routing_duration_ms": 658.711,
+        "optimization_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 1,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 581.182,
+        "geocoding_request_duration_ms": 444.547,
+        "request_duration_ms": 1252.632
+      },
+      "error_code": null
+    },
+    {
+      "name": "precise-address-repeat",
+      "request": {
+        "start": "233 S Wacker Dr, Chicago, IL",
+        "finish": "Milwaukee, WI"
+      },
+      "http_status": 200,
+      "wall_ms": 386.402,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 96.01433876163208,
+        "gallons_consumed": 9.601433876163206,
+        "gallons_purchased": 0.0,
+        "total_refueling_spend_usd": "0.00",
+        "total_refueling_spend_unrounded_usd": "0",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 40.398566123836794,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "0.00",
+        "savings_usd": "0.00",
+        "savings_percent": null
+      },
+      "stops": 0,
+      "station_ids": [],
+      "location_quality": [],
+      "road_miles": 96.01433876163208,
+      "road_points": 981,
+      "meta": {
+        "location_mode": "strict",
+        "location_coverage": {
+          "verified_station": 31
+        },
+        "candidate_count": 0,
+        "candidate_location_quality": {},
+        "corridor_threshold_miles": 5.0,
+        "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+        "price_basis": "illustrative_test_fixture",
+        "optimality_scope": "fixed_route_eligible_verified_candidates_zero_detour_model",
+        "projection_diagnostics": {
+          "ambiguous_projection_rejections": 0,
+          "outside_corridor_rejections": 0
+        },
+        "endpoint_resolution_duration_ms": 10.281,
+        "projection_duration_ms": 0,
+        "optimizer_duration_ms": 0,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -87.635868,
+              41.878658
+            ],
+            "label": "233 South Wacker Drive, Central, Chicago, IL, USA",
+            "precision": "provider_address",
+            "source": "https://openrouteservice.org/services/",
+            "cache_hit": true,
+            "local_index": false
+          },
+          "finish": {
+            "coordinates": [
+              -87.966695,
+              43.063348
+            ],
+            "label": "Milwaukee city, WI",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": true,
+        "routing_duration_ms": 38.754,
+        "optimization_cache_hit": true,
+        "directions_api_calls": 0,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 0.0,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 59.494
+      },
+      "error_code": null
+    },
+    {
+      "name": "unsupported-distance-1",
+      "request": {
+        "start": "Key West, FL",
+        "finish": "Prudhoe Bay, AK"
+      },
+      "http_status": 422,
+      "wall_ms": 820.748,
+      "fuel_summary": null,
+      "stops": null,
+      "station_ids": [],
+      "location_quality": [],
+      "road_miles": null,
+      "road_points": 0,
+      "meta": {
+        "endpoint_resolution_duration_ms": 10.164,
+        "projection_duration_ms": 0,
+        "optimizer_duration_ms": 0,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -81.775539,
+              24.565063
+            ],
+            "label": "Key West city, FL",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -148.749804,
+              70.365858
+            ],
+            "label": "Prudhoe Bay CDP, AK",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 458.807,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 530.028
+      },
+      "error_code": "ROUTE_LIMIT_OR_UNAVAILABLE"
+    },
+    {
+      "name": "unsupported-distance-2",
+      "request": {
+        "start": "Key West, FL",
+        "finish": "Prudhoe Bay, AK"
+      },
+      "http_status": 422,
+      "wall_ms": 821.506,
+      "fuel_summary": null,
+      "stops": null,
+      "station_ids": [],
+      "location_quality": [],
+      "road_miles": null,
+      "road_points": 0,
+      "meta": {
+        "endpoint_resolution_duration_ms": 6.92,
+        "projection_duration_ms": 0,
+        "optimizer_duration_ms": 0,
+        "baseline_duration_ms": 0,
+        "endpoints": {
+          "start": {
+            "coordinates": [
+              -81.775539,
+              24.565063
+            ],
+            "label": "Key West city, FL",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          },
+          "finish": {
+            "coordinates": [
+              -148.749804,
+              70.365858
+            ],
+            "label": "Prudhoe Bay CDP, AK",
+            "precision": "approximate_city",
+            "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+            "representative_point_note": "Census representative city point; not an exact departure or arrival address.",
+            "cache_hit": false,
+            "local_index": true
+          }
+        },
+        "route_cache_hit": false,
+        "directions_api_calls": 1,
+        "geocoding_api_calls": 0,
+        "recorded_route_reads": 0,
+        "directions_request_duration_ms": 392.562,
+        "geocoding_request_duration_ms": 0.0,
+        "request_duration_ms": 468.754
+      },
+      "error_code": "ROUTE_LIMIT_OR_UNAVAILABLE"
+    }
+  ],
+  "stats": {
+    "dataset": {
+      "sha256": "463feddc91c99dcbb045aab4e845000872bcc58ec404b46e53607f6f3ac860dd",
+      "price_basis": "illustrative_test_fixture",
+      "source_rows": 31,
+      "price_policy": "observed price closest to median; lower observed price breaks ties",
+      "rejected_rows": 0,
+      "deduped_us_ids": 31,
+      "us_source_rows": 31,
+      "distinct_all_ids": 31,
+      "exit_address_rows": 30,
+      "location_coverage": {
+        "verified_station": 31
+      },
+      "canadian_source_rows": 0,
+      "identity_conflicts_us": 0,
+      "conflicting_price_ids_us": 0,
+      "verified_evidence_sha256": "0f2978f5b3ba0b047582de9fc27a8d0992b86eb1936c4fcb53bdcca9d9c07fb0",
+      "conflicting_price_ids_all": 0
+    },
+    "dataset_revision": "07029b0d-e6da-4346-b8e7-983839eb34d3",
+    "location_coverage": {
+      "verified_station": 31
+    },
+    "local_places": 32071,
+    "cache_metrics": {
+      "directions_calls": 9,
+      "geocoding_calls": 1,
+      "route_hits": 9,
+      "route_misses": 14
+    },
+    "metrics_scope": "local database cache lifetime; not provider account quota"
+  },
+  "checks": {
+    "fuel_accounting": "passed",
+    "cash_sum": "passed",
+    "capacity": "passed",
+    "timeline_pairs": "passed",
+    "cache_reuse": "passed",
+    "geocoder_cache": "passed",
+    "failure_not_cached": "passed"
+  }
+}

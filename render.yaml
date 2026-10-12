@@ -20,6 +20,6 @@ services:
       - key: DATABASE_URL_UNPOOLED
         sync: false
       - key: ROUTING_PROVIDER
-        value: recorded
+        value: ors
       - key: ORS_API_KEY
         sync: false

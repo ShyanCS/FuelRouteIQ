@@ -8,7 +8,7 @@ from django.conf import settings
 from django.core.management import call_command
 from rest_framework.test import APIClient
 
-from api.throttles import RouteClientThrottle, RouteGlobalThrottle
+from api.throttles import RouteClientThrottle, RouteGlobalMinuteThrottle, RouteGlobalThrottle
 from stations.importer import import_fuel
 from stations.models import Dataset, SourceRow
 
@@ -56,7 +56,7 @@ def test_public_throttling_protects_malformed_requests(settings, monkeypatch):
     monkeypatch.setattr(
         RouteClientThrottle,
         "THROTTLE_RATES",
-        {"route_client": "2/minute", "route_global": "500/day"},
+        {"route_client": "2/minute", "route_global_minute": "30/minute", "route_global": "500/day"},
     )
     client = APIClient()
     for _ in range(2):
@@ -69,7 +69,11 @@ def test_public_throttling_protects_malformed_requests(settings, monkeypatch):
 
 def test_global_quota_spans_clients(settings, monkeypatch):
     settings.PUBLIC_API_THROTTLING = True
-    monkeypatch.setattr(RouteGlobalThrottle, "THROTTLE_RATES", {"route_global": "2/day"})
+    monkeypatch.setattr(
+        RouteGlobalThrottle,
+        "THROTTLE_RATES",
+        {"route_global": "2/day", "route_global_minute": "30/minute"},
+    )
     client = APIClient()
     for ip in ("192.0.2.1", "192.0.2.2"):
         assert (
@@ -94,6 +98,30 @@ def test_production_requires_secret_and_durable_database():
     env["DJANGO_SECRET_KEY"] = "test-only-long-secret-" * 4
     missing_db = subprocess.run(cmd, cwd=settings.BASE_DIR, env=env, capture_output=True, text=True)
     assert missing_db.returncode != 0 and "durable PostgreSQL" in missing_db.stderr
+
+
+def test_global_minute_quota_recovers_without_resetting_daily_quota(settings, monkeypatch):
+    settings.PUBLIC_API_THROTTLING = True
+    monkeypatch.setattr(
+        RouteGlobalMinuteThrottle, "THROTTLE_RATES", {"route_global_minute": "2/minute"}
+    )
+    clock = [1700000000.0]
+    monkeypatch.setattr(RouteGlobalMinuteThrottle, "timer", lambda self: clock[0])
+    client = APIClient()
+    for ip in ("192.0.2.11", "192.0.2.12"):
+        assert (
+            client.post("/api/v1/routes/optimize/", {}, format="json", REMOTE_ADDR=ip).status_code
+            == 400
+        )
+    limited = client.post("/api/v1/routes/optimize/", {}, format="json", REMOTE_ADDR="192.0.2.13")
+    assert limited.status_code == 429 and 0 < int(limited["Retry-After"]) <= 60
+    clock[0] += 61
+    assert (
+        client.post(
+            "/api/v1/routes/optimize/", {}, format="json", REMOTE_ADDR="192.0.2.14"
+        ).status_code
+        == 400
+    )
 
 
 def test_plain_postgres_url_gets_options_and_production_ssl():

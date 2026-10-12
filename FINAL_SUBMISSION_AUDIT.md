@@ -1,52 +1,34 @@
-# Final employer submission audit
+# Final submission audit
 
-12 October 2026. **Engineering source ready for independent review; complete live submission readiness remains PARTIAL.** Only demonstrated gates are PASS. Deployment, CI and publication entries are updated with actual evidence after execution.
+13 October 2026 local time. Authoritative original employer requirements are evaluated below. PASS means demonstrated behavior within its disclosed assumptions, not a nationwide navigation guarantee. This audit replaces stale absent-key/unpublished claims.
 
-| Original employer requirement | Status | Evidence and limitation |
+| Employer requirement | Status | Actual evidence / residual risk |
 |---|---|---|
-| Django API takes US start/finish | PASS locally | Validated city/state and conservative address lookup; foreign/malformed/ambiguous inputs have structured errors. Hosted execution pending. |
-| Map of road route and optimal fuel locations | PASS within model / PARTIAL overall | Five real OSRM recordings, exact-response Leaflet markers; conditional fixed-route optimizer. Small reviewed coverage and no modeled access/detours. |
-| Vehicle maximum range 500 miles, 10 MPG | PASS | Capacity derived as 50 gallons; independent oracle, boundaries, conservation and infeasible gaps. |
-| Money spent at supplied fuel prices | PASS for private assessment mode | Original CSV audit/import and actual local assessment requests tested. Public demonstration deliberately uses labelled illustrative prices; no private file/prices uploaded. |
-| Free map/routing API | PASS for recorded free roads; live UNVERIFIED | Actual attributed OSRM roads; current HeiGIT adapter/contract/mocks. Genuine authenticated key still needed. |
-| Quick responses, few external requests | PASS executable cache tests / live UNVERIFIED | One mocked directions miss, zero repeats/fuel/mode changes; recorded reads separately counted, separate geocoding and phase timings. Hosted/live timing pending. |
-| Latest stable Django | PASS at verification | Django 6.1.2, Python 3.12.10; pinned dependencies installed and checked. |
-| GitHub source code | PASS | Sanitized designated main published, independently cloned; actual Ubuntu CI passed. Later endpoint fix receives a final CI run. |
-| <=5-minute Loom showing API and code | PARTIAL | Updated natural 4:30 script, precise shot list and Postman requests. Human microphone/login/actual recording required; no link invented. |
-| Submit within three days | UNVERIFIED / user-controlled | Receipt timestamp unavailable; no employer submission performed. |
+| API accepts start/finish within USA | PASS | Local Census/Pelias validation; genuine hosted US requests and foreign/invalid rejection. Only supported unambiguous US formats, 50 states/DC |
+| Return route map and cost-effective fuel stops | PARTIAL | Actual hosted Leaflet/ORS geometry and fixed-route purchase optimum. Four demo corridors feasible; limited 31-site public prices mean some unseen long routes fail transparently |
+| Maximum 500-mile range/multiple fuel ups | PASS | Derived 50-gallon tank at 10 MPG, exact gap/capacity tests, DP oracle; live long routes show multiple feasible stops; zero arrival allowed |
+| Total money spent at 10 MPG | PASS | Actual prices selected from active dataset, Decimal costs, explicit cash/owned-fuel accounting, hosted conservation assertions |
+| Use supplied fuel-price file | PASS locally / PARTIAL public | Real 8,151-row import/raw audit and real-price live matrix tested locally. Public fixture is illustrative and prominently labelled; original CSV excluded pending redistribution permission |
+| Free map/routing API selected | PASS | Genuine free HeiGIT directions/Pelias plus attributed Leaflet/map data. Provider license/limits documented |
+| Latest stable Django | PASS | Django 6.1.2 checked against official release, tested Python/DRF pins; real public health/lockfile |
+| Return quickly | PASS, scoped | Measured live road-cache cold 2,597 ms / warm 473 ms; phases independently timed. Free sleep/wake is not an SLA |
+| Minimize external routing calls, ideally one | PASS | Actual cold one directions/zero geocoding; warm/fuel/mode zero directions; precise address geocoding counted separately; failures not cached |
+| Loom ≤5 minutes with API and code | PARTIAL | Updated 4:30 spoken script/shot list/hosted requests ready. No recording/link exists; human microphone/account required |
+| Share GitHub source | PASS | Public repository independently cloned; exact current CI code/run recorded in production-final-verification.json |
+| Submit within three days | UNVERIFIED | Receipt timestamp not supplied. Employer submission remains user-controlled and is not performed |
 
-## Final engineering evidence
+## Executed verification
 
-- Full local automated suite: **302 passed, 1 skipped**, 225.21 seconds; **95.21%** statement coverage (895/940). Skip is genuinely credential-dependent ORS. Focused production/API regressions: 33 passed.
-- Django system/migration checks, production deployment checks, pip consistency, Ruff lint/format, strict optimizer mypy and JS syntax pass. Static collection and real PostgreSQL migrations/32,071-place/public-site seeding passed.
-- Historical Phase 2 local Newman: 74 assertions across 11 actual HTTP requests; fresh safe package: 294 passed / two explicit input-dependent skips. These are local historical results, not hosted evidence.
-- Security: secret/database fail-fast production settings; HTTPS/header controls; conservative public quotas; one threaded worker; no admin credentials, open CORS or client-side provider key. Private assessment CSV, old excerpt, .env files, databases/caches and environments remain excluded.
+- Final full local suite: **308 passed, zero skipped, zero failures in 99.17s**, including private CSV audit and genuine opt-in ORS. Statement coverage **95.22% (937/984)**. Raw successful summary/coverage in artifacts/public/final-tests.txt and final-coverage.json.
+- Earlier restricted-network run: 307 passed/one live DNS failure. Network-enabled run exposed one SQLite cache concurrency failure; genuine ORS passed. Local cache SQL synchronization fixed it. Those failures are disclosed in production-final-verification.json; no failed or skipped test is counted as successful.
+- Django checks, migration drift, Ruff lint/format, strict optimizer mypy and pip consistency passed; production check --deploy zero issues. 36-package dependency advisory scan: zero known vulnerabilities/zero skips, point-in-time only.
+- Five genuine ORS roads acquired in the private assessment matrix. Actual authenticated Pelias address, invalid-key rejection/recovery, forced network deadline and unsupported-distance repeated failure tested. Unforced vendor rate-limit/5xx/malformed behavior remains mocked, not fabricated live evidence.
+- Actual public HTTPS validator: fifteen cases; real homepage/static/health and consistency/cache/foreign/failure handling. Actual hosted Newman: **11 requests/74 assertions/zero failures**. Production browser/redeploy/throttle/concurrency gates and latest pushed CI are recorded in production-final-verification.json as executed. Historical CI on 3ef91c1 passed 305/two explicit skips plus 74 loopback Newman assertions; it is not mislabeled as hosted evidence or the pending new code gate.
+- Fresh public clone/new environment installed pins, migrated/cached/seeded 32,071 places and 31 sites without private CSV; five pairs in both modes gave eight 200/two honest 422. Linux CI independently runs setup/checks/recorded HTTP collection. Current updates are verified again on final publication.
+- Actual PostgreSQL/route cache survived Render health-path redeploy. Public price revision remained 07029b0d-e6da-4346-b8e7-983839eb34d3; next long route made zero directions calls.
 
-## Remaining critical gates
+## Honest readiness decision
 
-1. Genuine HeiGIT key via local .env or hosting secret: authenticated short/long directions/Pelias, cache repeat and live corridor eligibility comparison.
-2. Confirm the connected Render workspace so the authorized free web service can be created; verify actual HTTPS homepage/assets/health/API, Newman, desktop/mobile browser and restart persistence.
-3. Publication and final endpoint CI are PASS; no remaining code/CI blocker is known.
-4. Record and inspect the <=5-minute Loom, add its real share URL, then the user submits to the employer.
+The source and working public application are suitable for independent review. Nationwide reviewed-price coverage remains partial; Seattle–San Francisco has a real road but no feasible priced plan. Prices are undated snapshots or expressly illustrative. Model detours/reserve are zero; entrances, operational access, HGV restrictions and hours are unverified. Greedy optimality covers a fixed route/candidate set, not all possible drives.
 
-Nationwide strict coverage is PARTIAL (31 reviewed sites). Full assessment estimated mode has 5,983 city points and 612 unresolved sites, with conditional proximity/savings; the public fixture has only 31 reviewed sites. Seattle–San Francisco fails priced coverage honestly. No station/price/route is invented to guarantee success.
-
-## Final endpoint audit correction
-
-The original Seattle–San Francisco recording is retired: Census's offshore San Francisco point snapped 29,953 m onto Point Reyes Lighthouse Road, so the historical 835.41-mile result is not a valid San Francisco city-route demonstration. The old file is preserved byte-for-byte with a retirement manifest. A single sourced GeoNames populated-place reference (CC BY 4.0, attributed) now corrects this endpoint only; station approximations and original Census records are unchanged. One additional real OSRM request produced a corrected **808.901515-mile** road with **12,369 points** and a **2.502-metre destination snap**. Both fuel modes still return an honest gap. Active route manifest: five pairs; six road files retained including the retired one.
-
-Every new API road is now rejected before caching if its first/last coordinate lies over 1 km from the requested endpoint. This is a conservative proximity guard, not proof of highway/station access. The route-cache namespace was advanced so previously unchecked cached geometry cannot bypass it. Endpoint source and representative-point qualification are returned in metadata. Precise-address locality checks use the reviewed endpoint reference when present. Other political/place representative points can still be unsuitable: such routes return a useful error requiring a precise address, rather than quietly accepting distant snapping.
-
-## Publication and independent evidence
-
-The sanitized main branch is published at https://github.com/ShyanCS/FuelRouteIQ. First CI discovered a missing PostgreSQL OPTIONS dictionary for URLs without query parameters; the fix uses setdefault and enforces production TLS, with an executable regression. Ubuntu CI on `12d948933d78ebf0c02a7b0880a1408e382b5ee3` then passed: **302 passed, 2 skipped in 32.44 s**, plus system/deploy/static/migration/pip/lint/format/type checks and **74 Newman assertions across 11 actual loopback HTTP requests**. This is CI evidence, not hosted HTTPS or authenticated ORS proof. [Run](https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38231909027). Later endpoint changes have a separate final verification gate.
-
-A fresh public clone and new environment installed its lockfile, migrated/seeding 32,071 places and 31 public reviewed sites, and returned expected statuses for all five pairs/modes. Unseen Austin→Austin is a valid zero-distance 200; Austin→Houston returns the honest recorded-provider unavailable error until live routing is configured. Browser checks compare API/UI cost $138.44, two actual stop pins, paired fuel jumps, short-trip cash/consumption, estimated disclosure and cleared failure states. Desktop/mobile layouts were inspected; mobile document width equals its client width. These are local-clone checks, not production browser evidence.
-
-The dependency advisory scan checked all **36 pinned packages, no skips, no known vulnerabilities**. This is a point-in-time advisory check, not a security guarantee. Private files/real credentials are excluded by publication/archive allowlists and Git ignore. Git attributes preserve checksummed source/recording bytes on Windows and Linux clones.
-
-Actual local APIClient over the remote PostgreSQL database passed nine cases and route reuse. First response **13,199.616 ms**, repeat **8,394.158 ms**; these include cross-region database round trips from the local machine and are not a hosted latency claim. Pure algorithm/network phase fields are separately recorded. The hosted app/database are intended for nearby regions, but no unmeasured improvement is claimed. Repeated real database seed retained revision `e38195aa-0f88-439f-ae25-9e602ed0991c` and all 31 reviewed sites. Artifacts: `artifacts/public/production-checks.json`, `production-source-review.json` and `production-dependency-audit.json`.
-
-Final endpoint-corrected local suite: **306 passed, 1 skipped in 228.23 s**, **95.30%** backend statement coverage (913/958). The sole local skip requires a genuine ORS key. No mock or recording is claimed as successful authenticated ORS. Full evidence is in `artifacts/public/final-tests.txt` and `final-coverage.json`.
-
-Final endpoint-corrected publication/CI is verified on code commit **e7905f473fe6011f11e9b14cb8b0132e18cd7eb4**. [Successful Ubuntu run](https://github.com/ShyanCS/FuelRouteIQ/actions/runs/38234341812): **305 passed, 2 explicit skips in 27.46 s**, plus **74/74 Newman assertions across 11 real loopback HTTP requests**, production static/security/migration, dependency, lint/format and type checks. Skips: private assessment CSV and genuine ORS key. The independent public clone fast-forwarded to that commit and confirmed the corrected Seattle road/provenance/snap distances and honest 422 coverage gap. Later documentation-only commits preserve this code evidence. Public HTTPS, hosted Postman/browser/restart tests and successful authenticated ORS remain UNVERIFIED; Loom is unrecorded.
+No private price data, real secrets, paid resources or employer submission are authorized/exposed. A public assessment-price dataset requires resolved permission; the local importer and private original matrix already demonstrate assessment support. The final employer-facing submission still needs the actual under-five-minute Loom recording and user-controlled submission/deadline confirmation. Final current machine-verifiable gates are in artifacts/public/production-final-verification.json.
