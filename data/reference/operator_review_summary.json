@@ -1,0 +1,19 @@
+{
+  "selected": 27,
+  "retrieved": 26,
+  "accepted_additions": 25,
+  "verified_evidence_total": 31,
+  "rejected": [
+    {
+      "opis_id": "9365",
+      "reason": "operator brand/name, locality or road mismatch",
+      "official_name": "ONE9 Travel Center #713 Latta, SC"
+    }
+  ],
+  "unresolved": [
+    {
+      "opis_id": "6992",
+      "reason": "official city page unavailable; no location guessed"
+    }
+  ]
+}

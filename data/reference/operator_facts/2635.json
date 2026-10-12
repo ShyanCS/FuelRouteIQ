@@ -1,0 +1,16 @@
+{
+  "opis_id": "2635",
+  "station_name": "Flying J Travel Center #584 Aurora, OR",
+  "city": "Aurora",
+  "state": "OR",
+  "latitude": 45.2336967,
+  "longitude": -122.8099719,
+  "road_context": "I-5, Exit 278",
+  "source": "https://locations.pilotflyingj.com/us/or/aurora/12334-ehlen-road-ne",
+  "source_city": "aurora",
+  "verified_at": "2026-10-12T06:24:14.423350+00:00",
+  "source_response_sha256": "c29f1e5a563001e22530e8106e065d8ccbe119db99d5c73f7663cddaf6c1e72d",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

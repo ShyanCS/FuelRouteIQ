@@ -1,0 +1,16 @@
+{
+  "opis_id": "52575",
+  "station_name": "Pilot Travel Center #775 Saint George, UT",
+  "city": "Saint George",
+  "state": "UT",
+  "latitude": 37.0599477,
+  "longitude": -113.581869,
+  "road_context": "I-15, Exit 4",
+  "source": "https://locations.pilotflyingj.com/us/ut/saint-george/2841-s-60-e",
+  "source_city": "saint george",
+  "verified_at": "2026-10-12T06:21:44.303017+00:00",
+  "source_response_sha256": "48b578abc2f112d7097473fc014016d0833a9f8399deb99f15589bf87f047a2d",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

@@ -1,0 +1,16 @@
+{
+  "opis_id": "66106",
+  "station_name": "Flying J Dealer #509 Beaver, UT",
+  "city": "Beaver",
+  "state": "UT",
+  "latitude": 38.2929814,
+  "longitude": -112.6528562,
+  "road_context": "I-15, Exit 112",
+  "source": "https://locations.pilotflyingj.com/us/ut/beaver/653-w-1400-n",
+  "source_city": "beaver",
+  "verified_at": "2026-10-12T06:21:43.413542+00:00",
+  "source_response_sha256": "4fdc9e8fb790c61f9cd4ac14f61de4442e93a03a68acf02aafc6f58aed8d95df",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

@@ -1,0 +1,16 @@
+{
+  "opis_id": "66914",
+  "station_name": "Flying J Travel Center #683 Kenly, NC",
+  "city": "Kenly",
+  "state": "NC",
+  "latitude": 35.5745074,
+  "longitude": -78.1464014,
+  "road_context": "I-95, Exit 106",
+  "source": "https://locations.pilotflyingj.com/us/nc/kenly/1800-princeton-kenly-rd",
+  "source_city": "kenly",
+  "verified_at": "2026-10-12T06:21:35.328585+00:00",
+  "source_response_sha256": "d154d527f598a62db211d3f3c105d7fe99224a876458641ec501186720501005",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

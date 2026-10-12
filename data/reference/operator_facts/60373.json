@@ -1,0 +1,16 @@
+{
+  "opis_id": "60373",
+  "station_name": "Flying J Travel Center #571 Charleston, MO",
+  "city": "Charleston",
+  "state": "MO",
+  "latitude": 36.9222008,
+  "longitude": -89.3139328,
+  "road_context": "I-57, Exit 12",
+  "source": "https://locations.pilotflyingj.com/us/mo/charleston/2460-us-60",
+  "source_city": "charleston",
+  "verified_at": "2026-10-12T06:24:16.632033+00:00",
+  "source_response_sha256": "8b6551cbb9e919194d5c8e3af258015d949301a0289c425d1b074ed242af7c87",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

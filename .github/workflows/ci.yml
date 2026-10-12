@@ -1,0 +1,41 @@
+name: Backend verification
+permissions:
+  contents: read
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: python -m pip install -r requirements.lock
+      - run: python -m pip check
+      - run: python manage.py check
+      - run: python manage.py check --deploy && python manage.py collectstatic --noinput
+        env:
+          DJANGO_DEBUG: 'false'
+          DJANGO_SECRET_KEY: 'test-only-ci-configuration-key-not-used-on-a-host-01234567890123456789'
+          DATABASE_URL: 'postgresql://ci:ci@localhost/ci'
+      - run: python manage.py makemigrations --check --dry-run
+      - run: python manage.py migrate && python manage.py createcachetable
+      - run: python -m ruff check . && python -m ruff format --check .
+      - run: python -m mypy optimizer
+      - run: python -m pytest --cov=api --cov=routing --cov=stations --cov=optimizer --cov-report=term-missing --cov-fail-under=85
+      - run: python manage.py import_locations --cities && python manage.py import_fuel fixtures/public_demo_prices.csv && python manage.py import_locations --verified data/reference/verified_stations.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --global newman
+      - name: Postman HTTP verification
+        env:
+          ROUTING_PROVIDER: recorded
+        run: |
+          python manage.py runserver 127.0.0.1:8000 --noreload > /tmp/fuelroute-server.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8000/api/v1/health/ && break || sleep 1; done
+          newman run postman/FuelRouteIQ.postman_collection.json --env-var base_url=http://127.0.0.1:8000

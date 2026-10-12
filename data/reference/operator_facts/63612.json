@@ -1,0 +1,16 @@
+{
+  "opis_id": "63612",
+  "station_name": "Flying J Travel Center #622 Fort Pierce, FL",
+  "city": "Fort Pierce",
+  "state": "FL",
+  "latitude": 27.448956,
+  "longitude": -80.3977813,
+  "road_context": "I-95, Exit 131",
+  "source": "https://locations.pilotflyingj.com/us/fl/fort-pierce/100-n-kings-hwy",
+  "source_city": "fort pierce",
+  "verified_at": "2026-10-12T06:21:39.663582+00:00",
+  "source_response_sha256": "e19b46bf68bee954f5df0e9419ed998c0e76113042efc73e194631d7c1b31f41",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

@@ -1,0 +1,9 @@
+..................................s.s................................... [ 24%]
+........................................................................ [ 48%]
+........................................................................ [ 72%]
+........................................................................ [ 97%]
+........                                                                 [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_importer.py:71: Private assessment CSV deliberately not bundled for distribution
+SKIPPED [1] tests\test_live.py:12: Set RUN_LIVE_TESTS=1 and ORS_API_KEY to make exactly one live request
+294 passed, 2 skipped in 82.05s (0:01:22)

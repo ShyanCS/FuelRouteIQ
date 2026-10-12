@@ -1,0 +1,16 @@
+{
+  "opis_id": "2088",
+  "station_name": "Flying J Travel Center #773 Richfield, UT",
+  "city": "Richfield",
+  "state": "UT",
+  "latitude": 38.7886907,
+  "longitude": -112.0822702,
+  "road_context": "I-70, Exit 40",
+  "source": "https://locations.pilotflyingj.com/us/ut/richfield/35-e-flying-j-dr",
+  "source_city": "richfield",
+  "verified_at": "2026-10-12T06:21:45.238372+00:00",
+  "source_response_sha256": "541938981afd0677ea6e23b0f6124014e05f6a6391a6910bdd28bd1fa5365f68",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

@@ -1,0 +1,16 @@
+{
+  "opis_id": "4605",
+  "station_name": "Pilot Dealer #898 Emporia, VA",
+  "city": "Emporia",
+  "state": "VA",
+  "latitude": 36.7045199,
+  "longitude": -77.5528551,
+  "road_context": "I-95, Exit 11B",
+  "source": "https://locations.pilotflyingj.com/us/va/emporia/918-w-atlantic-st",
+  "source_city": "emporia",
+  "verified_at": "2026-10-12T06:21:33.398763+00:00",
+  "source_response_sha256": "1d2f68cb7f78c9e0dd82261ca0e341a25278e8b8d445e8ee1adab5e675b73ea7",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

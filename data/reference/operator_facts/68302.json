@@ -1,0 +1,16 @@
+{
+  "opis_id": "68302",
+  "station_name": "Flying J Travel Center #493 Saint George, SC",
+  "city": "Saint George",
+  "state": "SC",
+  "latitude": 33.1939873,
+  "longitude": -80.602305,
+  "road_context": "I-95, Exit 77",
+  "source": "https://locations.pilotflyingj.com/us/sc/saint-george/113-motel-dr",
+  "source_city": "saint george",
+  "verified_at": "2026-10-12T06:21:37.097474+00:00",
+  "source_response_sha256": "1055c620a81be27e58034570f6f5a76c7483d255902cc17809d15333b9649a92",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

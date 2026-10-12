@@ -1,0 +1,16 @@
+{
+  "opis_id": "52466",
+  "station_name": "Flying J Travel Center #784 North East, MD",
+  "city": "North East",
+  "state": "MD",
+  "latitude": 39.6254814,
+  "longitude": -75.9501476,
+  "road_context": "I-95, Exit 100",
+  "source": "https://locations.pilotflyingj.com/us/md/north-east/1-center-dr",
+  "source_city": "north east",
+  "verified_at": "2026-10-12T06:21:30.883175+00:00",
+  "source_response_sha256": "5f4ec308325823f2c67021841060c917aa9a7d2b1585802a74bd379095c1fca6",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: fuelroute-iq
+    runtime: python
+    plan: free
+    region: virginia
+    branch: main
+    buildCommand: sh scripts/render_build.sh
+    startCommand: sh scripts/render_start.sh
+    healthCheckPath: /api/v1/health/
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: DJANGO_DEBUG
+        value: "false"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_URL_UNPOOLED
+        sync: false
+      - key: ROUTING_PROVIDER
+        value: recorded
+      - key: ORS_API_KEY
+        sync: false

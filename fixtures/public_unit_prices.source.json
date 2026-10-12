@@ -1,0 +1,9 @@
+{
+  "price_basis": "illustrative_test_fixture",
+  "sha256": "2f599308c89c43b6cbd4d04d31bb834e24fb304220011617e0190c826eae9a52",
+  "license": "Original hand-authored test price values; CC0. Coordinate/identity facts have individually cited operator sources.",
+  "purpose": "Reproducible inventory/cost algorithm demonstration only. These numbers are neither supplied assessment observations nor real or current pump prices.",
+  "rows": 12,
+  "identities": 6,
+  "generation": "Fixed illustrative values 3.00 + (index mod 5)/10; unit fixture includes explicit conflict observations."
+}

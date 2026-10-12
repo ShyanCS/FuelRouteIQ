@@ -1,0 +1,16 @@
+{
+  "opis_id": "66898",
+  "station_name": "Pilot Travel Center #384 Colonial Heights, VA",
+  "city": "Colonial Heights",
+  "state": "VA",
+  "latitude": 37.3108667,
+  "longitude": -77.3915178,
+  "road_context": "I-95, Exit 58",
+  "source": "https://locations.pilotflyingj.com/us/va/colonial-heights/2126-ruffin-mill-rd",
+  "source_city": "colonial heights",
+  "verified_at": "2026-10-12T06:21:32.570239+00:00",
+  "source_response_sha256": "e64425ed91b536a43372a503ddbee2df9f01c8997f79135dd2a11aa6ddfc9cab",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

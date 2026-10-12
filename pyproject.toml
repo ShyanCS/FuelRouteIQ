@@ -1,0 +1,19 @@
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "fuelroute.settings"
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --basetemp=.pytest-tmp"
+markers = ["live: explicit opt-in credentialed ORS integration"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+exclude = [".venv", ".venv-clean", ".venv-review", "review-unpacked"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+files = ["optimizer"]
+strict = true

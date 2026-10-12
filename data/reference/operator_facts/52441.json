@@ -1,0 +1,16 @@
+{
+  "opis_id": "52441",
+  "station_name": "Pilot Travel Center #6990 Kenly, NC",
+  "city": "Kenly",
+  "state": "NC",
+  "latitude": 35.5829955,
+  "longitude": -78.1478903,
+  "road_context": "I-95, Exit 106",
+  "source": "https://locations.pilotflyingj.com/us/nc/kenly/1000-truckstop-rd",
+  "source_city": "kenly",
+  "verified_at": "2026-10-12T06:21:34.291688+00:00",
+  "source_response_sha256": "29387b752b5430fd218a51b92838f58eb865fd12d898a71b76457da7718a8a0d",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

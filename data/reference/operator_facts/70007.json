@@ -1,0 +1,16 @@
+{
+  "opis_id": "70007",
+  "station_name": "Flying J Travel Center #1096 Cocoa, FL",
+  "city": "Cocoa",
+  "state": "FL",
+  "latitude": 28.374809,
+  "longitude": -80.802044,
+  "road_context": "I-95, Exit 202",
+  "source": "https://locations.pilotflyingj.com/us/fl/cocoa/1101-friday-rd",
+  "source_city": "cocoa",
+  "verified_at": "2026-10-12T06:21:38.845644+00:00",
+  "source_response_sha256": "550bbc77cf80e604666db776e95fc772629a5a68ac55f40c47e9dc2285567b93",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted. Source CSV exit differs from the current operator exit; the discrepancy is disclosed, and station identity is established by brand/store/locality.",
+  "source_address_context_conflict": true
+}

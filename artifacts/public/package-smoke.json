@@ -1,0 +1,132 @@
+{
+  "isolation": "Extracted ZIP, new pinned environment, separate SQLite, no private source CSV/excerpt, config copied only from .env.example",
+  "django": "6.1.2",
+  "private_csv_absent": true,
+  "private_excerpt_absent": true,
+  "health": {
+    "status": "ok",
+    "django_version": "6.1.2",
+    "routing_provider": "recorded",
+    "live_routing_configured": false,
+    "fuel_dataset_loaded": true,
+    "local_places": 32071,
+    "price_basis": "illustrative_test_fixture",
+    "recorded_route_count": 5
+  },
+  "cases": [
+    {
+      "start": "Chicago, IL",
+      "finish": "Dallas, TX",
+      "status": 200,
+      "price_basis": "illustrative_test_fixture",
+      "external_directions": 0,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 961.4738676131393,
+        "gallons_consumed": 96.14738676131392,
+        "gallons_purchased": 46.147386761313925,
+        "total_refueling_spend_usd": "138.44",
+        "total_refueling_spend_unrounded_usd": "138.4421602839417800047721308",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 0.0,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "145.94",
+        "savings_usd": "7.50",
+        "savings_percent": 5.139593480322913
+      },
+      "error_code": null
+    },
+    {
+      "start": "Chicago, IL",
+      "finish": "Milwaukee, WI",
+      "status": 200,
+      "price_basis": "illustrative_test_fixture",
+      "external_directions": 0,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 95.02642070309393,
+        "gallons_consumed": 9.502642070309394,
+        "gallons_purchased": 0.0,
+        "total_refueling_spend_usd": "0.00",
+        "total_refueling_spend_unrounded_usd": "0",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 40.49735792969061,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "0.00",
+        "savings_usd": "0.00",
+        "savings_percent": null
+      },
+      "error_code": null
+    },
+    {
+      "start": "New York, NY",
+      "finish": "Miami, FL",
+      "status": 200,
+      "price_basis": "illustrative_test_fixture",
+      "external_directions": 0,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 1280.0533633579894,
+        "gallons_consumed": 128.00533633579894,
+        "gallons_purchased": 78.00533633579893,
+        "total_refueling_spend_usd": "235.46",
+        "total_refueling_spend_unrounded_usd": "235.4624787209410820948063310",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 0.0,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "249.88",
+        "savings_usd": "14.42",
+        "savings_percent": 5.770661371884972
+      },
+      "error_code": null
+    },
+    {
+      "start": "Los Angeles, CA",
+      "finish": "Denver, CO",
+      "status": 200,
+      "price_basis": "illustrative_test_fixture",
+      "external_directions": 0,
+      "fuel_summary": {
+        "economic_fuel_cost_usd": null,
+        "remaining_fuel_value_usd": null,
+        "economic_cost_status": "unknown_initial_fuel_value",
+        "valuation_method": "FIFO; unavailable when consumed initially owned fuel is unvalued",
+        "route_miles": 1036.8331444364908,
+        "gallons_consumed": 103.6833144436491,
+        "gallons_purchased": 53.68331444364909,
+        "total_refueling_spend_usd": "166.45",
+        "total_refueling_spend_unrounded_usd": "166.4491301295695728869800367",
+        "initial_fuel_value_usd": null,
+        "total_acquired_fuel_value_usd": null,
+        "end_fuel_gallons": 0.0,
+        "baseline_status": "feasible_same_model",
+        "baseline_spend_usd": "178.29",
+        "savings_usd": "11.84",
+        "savings_percent": 6.641819760818324
+      },
+      "error_code": null
+    },
+    {
+      "start": "Seattle, WA",
+      "finish": "San Francisco, CA",
+      "status": 422,
+      "price_basis": null,
+      "external_directions": 0,
+      "fuel_summary": null,
+      "error_code": "UNREACHABLE_FUEL_GAP"
+    }
+  ],
+  "package_tests": "294 passed, 2 skipped (private CSV and valid ORS key absent), 82.05 seconds"
+}

@@ -1,0 +1,44 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FuelRoute IQ · Spend less. Know why.</title>
+  <link rel="stylesheet" href="{% static 'demo/vendor/leaflet.css' %}">
+  <link rel="stylesheet" href="{% static 'demo/app.css' %}">
+  <script defer src="{% static 'demo/vendor/leaflet.js' %}"></script>
+  <script defer src="{% static 'demo/app.js' %}"></script>
+</head>
+<body>
+<header><a class="brand" href="/" aria-label="FuelRoute IQ home"><span class="brand-icon">↗</span> FuelRoute<span>IQ</span></a><span class="header-note">A clearer road to smarter fuel spending</span><span id="provider-badge" class="badge">Checking routing service…</span></header>
+<main>
+  <aside>
+    <div class="eyebrow">ROAD TRIP INTELLIGENCE</div><h1>Spend less.<br><span>Know why.</span></h1><p class="intro">A fuel plan that explains every gallon, every stop, and every assumption.</p>
+    <form id="planner">
+      <label for="start">Starting point</label><input id="start" name="start" value="Chicago, IL" required maxlength="250" autocomplete="off">
+      <label for="finish">Destination</label><input id="finish" name="finish" value="Dallas, TX" required maxlength="250" autocomplete="off">
+      <div class="form-row"><div><label for="mode">Location quality</label><select id="mode"><option value="strict">Verified stations only</option><option value="estimated">Estimated city locations</option></select></div><div><label for="fuel">Starting fuel · gal</label><input id="fuel" type="number" min="0" max="50" step="0.1" value="50" required></div></div>
+      <p id="mode-help" class="mode-help">Strict uses reviewed station sites. Coverage is limited. Estimated mode allows approximate city points and conditional costs.</p>
+      <label for="initial-value">Value of starting fuel · USD <span class="optional">optional</span></label><input id="initial-value" type="number" min="0" step="0.01" placeholder="Unknown — leave blank">
+      <p class="vehicle">500 mile range <span>·</span> 10 MPG <span>·</span> 50 gallon tank</p>
+      <button id="submit" type="submit">Find my fuel plan <span>→</span></button>
+    </form>
+    <div class="examples"><span>Try a sample journey</span><button class="example" data-start="Chicago, IL" data-city="Dallas, TX">Long · Dallas</button><button class="example" data-start="Chicago, IL" data-city="Milwaukee, WI">Short · Milwaukee</button><button class="example" data-start="New York, NY" data-city="Miami, FL">New York → Miami</button><button class="example" data-start="Los Angeles, CA" data-city="Denver, CO">Los Angeles → Denver</button><button class="example" data-start="Seattle, WA" data-city="San Francisco, CA">Seattle → San Francisco</button></div>
+    <div class="quality-note"><span class="quality-icon">◎</span><div><strong>Confidence you can inspect</strong><p>Verified markers are reviewed station sites. Amber markers are city approximations. Detours and current prices need confirmation.</p></div></div>
+    <div id="error" class="error" role="alert" hidden></div>
+    <button id="retry-estimated" class="retry" type="button" hidden>Try estimated city coverage</button>
+    <div class="stop-heading"><h2>Fuel stops</h2><span id="stop-count">—</span></div><ol id="stops" class="stops"><li class="placeholder">Plan a journey to see where to buy fuel and why.</li></ol>
+  </aside>
+  <section class="workspace" aria-label="Route and fuel analysis">
+    <div class="workspace-heading"><div class="eyebrow">YOUR JOURNEY, EXPLAINED</div><h2 id="journey">Chicago → Dallas</h2><p id="status" role="status">Ready to plan. Results come directly from the Django API.</p></div>
+    <div id="quality-banner" class="quality-banner" role="status">Minimum purchases apply only to the fixed route and eligible candidates, with zero modeled detours.</div>
+    <div class="metrics"><article><span>ROAD DISTANCE</span><strong id="distance">—</strong><small>miles along the selected route</small></article><article class="accent"><span>EN-ROUTE PURCHASES</span><strong id="spend">—</strong><small>starting fuel value excluded</small></article><article><span>BASELINE SAVINGS</span><strong id="savings">—</strong><small id="baseline">same starting fuel and candidates</small></article><article><span>FUEL CONSUMED</span><strong id="consumed">—</strong><small id="purchased">gallons · separate from purchases</small></article></div>
+    <div class="fuel-ledger"><div><span>Starting inventory</span><strong id="initial-volume">—</strong></div><div><span>Starting inventory value</span><strong id="initial-worth">Unknown</strong></div><div><span>Consumption value (FIFO)</span><strong id="economic-cost">Unavailable</strong></div><div><span>Cost comparison basis</span><strong>En-route cash purchases</strong></div></div>
+    <div class="map-card"><div id="map" aria-label="Interactive road route map"></div><div class="map-legend"><span><i class="verified-dot"></i> Verified station site</span><span><i class="approximate-dot"></i> Approximate city</span><span><i class="route-line"></i> Road route</span><button id="street-tiles" type="button">Street tiles (online)</button><span id="tile-status" role="status">Local state basemap</span></div></div>
+    <div class="timeline-card"><div class="section-heading"><div><h2>Fuel along the way</h2><p>Consumption slopes down. Purchases jump up at the same mile.</p></div><span id="end-fuel" class="badge">50 gallon capacity</span></div><svg id="timeline" viewBox="0 0 800 185" role="img" aria-label="Fuel level chart"><text x="400" y="90" text-anchor="middle" class="empty-chart">Your fuel timeline will appear here.</text></svg></div>
+    <details class="transparency" open><summary>Assumptions & data quality</summary><ul id="warnings"><li>Assessment prices are undated snapshots. City positions cannot establish station access.</li><li>Minimum purchase cost applies to the selected route and eligible stations under a zero-detour model.</li></ul><div id="request-meta"></div></details>
+    <details class="raw-response"><summary>Inspect the API response</summary><pre id="raw">No request yet.</pre></details>
+  </section>
+</main>
+<footer>FuelRoute IQ · Django backend assessment <span>Transparent prices. Precise accounting. Honest geography.</span></footer>
+</body></html>

@@ -1,0 +1,7 @@
+{
+  "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_1_states_provinces.geojson",
+  "upstream_response_sha256": "0067dec6a2c4f9c7a644bf7a9a46163d8d881595953326d0c67d89934190aefe",
+  "local_sha256": "af1f01bd81ec4bd8e32de8497bfc022063d762b6d2f8a41daf07bf14ed0ad155",
+  "license": "Natural Earth public domain",
+  "scale": "1:110m; display context only, never station/US input validation"
+}

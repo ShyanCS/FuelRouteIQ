@@ -1,0 +1,16 @@
+{
+  "opis_id": "70292",
+  "station_name": "Flying J Dealer #1171 Mesquite, NV",
+  "city": "Mesquite",
+  "state": "NV",
+  "latitude": 36.78403,
+  "longitude": -114.1406037,
+  "road_context": "I-15, Exit 118",
+  "source": "https://locations.pilotflyingj.com/us/nv/mesquite/1057-s.-lower-flat-top-drive",
+  "source_city": "mesquite",
+  "verified_at": "2026-10-12T06:21:41.714040+00:00",
+  "source_response_sha256": "e58b92e122bf4a149024a1e91ec2f8971d413f3798d76fa315a82414d7c1b4c5",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

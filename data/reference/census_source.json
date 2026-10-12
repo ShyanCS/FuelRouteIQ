@@ -1,0 +1,8 @@
+{
+  "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+  "archive_sha256": "af678e2d990827c89ee39b98c82de6e90b693c7361ff0e559ae3076670dd2863",
+  "text_sha256": "e10cb8004732684fa2a75b9d6030c6c9171674d6b112cff29dbc1bc31a9b82fa",
+  "archive_member": "2026_Gaz_place_national.txt",
+  "license": "US Census federal government data; public domain",
+  "precision": "Census internal point, approximate city only; never a station coordinate"
+}

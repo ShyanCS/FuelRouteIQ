@@ -1,0 +1,15 @@
+{
+  "opis_id": "9365",
+  "station_name": "ONE9 Travel Center #713 Latta, SC",
+  "city": "Latta",
+  "state": "SC",
+  "latitude": 34.3389878,
+  "longitude": -79.5341102,
+  "road_context": "I-95, Exit 181A",
+  "source": "https://locations.pilotflyingj.com/us/sc/latta/111-mill-branch-rd",
+  "source_city": "latta",
+  "verified_at": "2026-10-12T06:21:36.177532+00:00",
+  "source_response_sha256": "bcbf2667a7b9dd28d9b851583435034f135af9c7a29a4d27dfa01514d27a2245",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Pending reviewer validation of source identity, city/state and road context."
+}

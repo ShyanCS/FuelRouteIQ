@@ -1,0 +1,16 @@
+{
+  "opis_id": "5236",
+  "station_name": "Flying J Travel Center #875 Elkton, MD",
+  "city": "Elkton",
+  "state": "MD",
+  "latitude": 39.6383641,
+  "longitude": -75.8059821,
+  "road_context": "I-95, Exit 109A",
+  "source": "https://locations.pilotflyingj.com/us/md/elkton/221-belle-hill-rd",
+  "source_city": "elkton",
+  "verified_at": "2026-10-12T06:21:31.704195+00:00",
+  "source_response_sha256": "d3690e73676ffabcc2225f4ae6cb88d2e203abeb48aab54534946f9447204ca2",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

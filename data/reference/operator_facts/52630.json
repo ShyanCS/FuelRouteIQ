@@ -1,0 +1,16 @@
+{
+  "opis_id": "52630",
+  "station_name": "Pilot Travel Center #386 Salem, OR",
+  "city": "Salem",
+  "state": "OR",
+  "latitude": 45.0487594,
+  "longitude": -122.9748793,
+  "road_context": "I-5, Exit 263",
+  "source": "https://locations.pilotflyingj.com/us/or/salem/4220-brooklake-rd-ne",
+  "source_city": "salem",
+  "verified_at": "2026-10-12T06:24:13.524202+00:00",
+  "source_response_sha256": "1848c9ccf3c4d71f3a0ada39f1c9cd8db7d4d59d07ab1892bc7e8a4d2259e63c",
+  "retrieval_method": "bounded selected operator page; coordinate/name/road facts only, no prices",
+  "review_notes": "Reviewed official operator facts against source aliases: same brand and numbered store, city/state and highway. Operator-published site coordinates; exact entrance, detour and pump availability remain unverified. No prices extracted.",
+  "source_address_context_conflict": false
+}

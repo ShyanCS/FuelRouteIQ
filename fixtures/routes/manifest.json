@@ -1,0 +1,62 @@
+[
+  {
+    "start": [
+      -87.684939,
+      41.837045
+    ],
+    "finish": [
+      -96.766513,
+      32.793333
+    ],
+    "file": "chicago-dallas.json",
+    "sha256": "0f0dfc3d2d50ea73da5d610e86e1af7d3cfad51b61525cd2bc6f27fa349520c1"
+  },
+  {
+    "start": [
+      -87.684939,
+      41.837045
+    ],
+    "finish": [
+      -87.966695,
+      43.063348
+    ],
+    "file": "chicago-milwaukee.json",
+    "sha256": "7e2beec705ee4ee2b8f7cfc04a205a62362b0ee04ffba2b3d121fbb8fec5d51e"
+  },
+  {
+    "start": [
+      -73.938677,
+      40.662712
+    ],
+    "finish": [
+      -80.208615,
+      25.775163
+    ],
+    "file": "new-york-miami.json",
+    "sha256": "2a5464344c81570e1ec8a6fe41827569d734aee628b6301f31e00094d7b24e70"
+  },
+  {
+    "start": [
+      -118.410825,
+      34.019394
+    ],
+    "finish": [
+      -104.881105,
+      39.76185
+    ],
+    "file": "los-angeles-denver.json",
+    "sha256": "a131c4119c3a0c3e4e9fe6d088b34b8aebb1d28cb93453a7d8dcaaee6f14b643"
+  },
+  {
+    "start": [
+      -122.351538,
+      47.619335
+    ],
+    "finish": [
+      -123.032229,
+      37.727239
+    ],
+    "file": "seattle-san-francisco.json",
+    "sha256": "d3aea75a89d216556eb371674a8998043deb9ce2d6fdf36a68c6493b16c1819f"
+  }
+]
